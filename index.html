@@ -1,216 +1,91 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>堆栈内存分配详解1</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.bootcdn.net/ajax/libs/daisyui/4.12.10/full.min.css" rel="stylesheet">
+<html lang="zh-cn">
+  <head>
+    <title>My App2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimal-ui">
+    <link rel="stylesheet" href="app.min.css">
     <style>
-        .memory-layout {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            margin: 20px 0;
-        }
-        .memory-section {
-            padding: 15px;
-            margin: 5px 0;
-            border-left: 4px solid;
-            position: relative;
-        }
-        .address {
-            position: absolute;
-            right: 10px;
-            top: 10px;
-            font-family: monospace;
-        }
+      /* TODO */
     </style>
-</head>
-<body class="p-8 bg-base-200">
-    <div class="max-w-4xl mx-auto">
-        <h1 class="text-3xl font-bold mb-6">C/C++程序内存分配与堆栈详解</h1>
-        
-        <div class="card bg-base-100 shadow-xl mb-6">
-            <div class="card-body">
-                <h2 class="card-title">程序内存分配五大区域</h2>
-                <div class="memory-layout">
-                    <div class="memory-section bg-blue-50 border-blue-500">
-                        <div class="address">高地址</div>
-                        <h3 class="font-bold">栈区(stack)</h3>
-                        <p>由编译器自动分配释放，存放函数的参数值、局部变量等</p>
-                    </div>
-                    <div class="memory-section bg-green-50 border-green-500">
-                        <h3 class="font-bold">堆区(heap)</h3>
-                        <p>由程序员分配释放，若程序员不释放，程序结束时可能由OS回收</p>
-                    </div>
-                    <div class="memory-section bg-purple-50 border-purple-500">
-                        <h3 class="font-bold">全局区/静态区(static)</h3>
-                        <p>存放全局变量和静态变量，程序结束后由系统释放</p>
-                    </div>
-                    <div class="memory-section bg-yellow-50 border-yellow-500">
-                        <h3 class="font-bold">文字常量区</h3>
-                        <p>存放常量字符串，程序结束后由系统释放</p>
-                    </div>
-                    <div class="memory-section bg-red-50 border-red-500">
-                        <div class="address">低地址</div>
-                        <h3 class="font-bold">程序代码区</h3>
-                        <p>存放函数体的二进制代码</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  </head>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div class="card bg-base-100 shadow-xl">
-                <div class="card-body">
-                    <h2 class="card-title">栈(stack)的特点</h2>
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li>由系统自动分配和释放</li>
-                        <li>存放函数参数和局部变量</li>
-                        <li>操作方式类似数据结构中的栈(LIFO)</li>
-                        <li>Windows下默认大小2M(编译时确定)</li>
-                        <li>向低地址扩展，连续内存区域</li>
-                        <li>分配速度快，程序员无法控制</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card bg-base-100 shadow-xl">
-                <div class="card-body">
-                    <h2 class="card-title">堆(heap)的特点</h2>
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li>由程序员分配和释放</li>
-                        <li>使用malloc/new申请，free/delete释放</li>
-                        <li>分配方式类似于链表</li>
-                        <li>向高地址扩展，不连续内存区域</li>
-                        <li>大小受限于计算机有效虚拟内存</li>
-                        <li>分配速度较慢，容易产生内存碎片</li>
-                    </ul>
-                </div>
-            </div>
+  <body>
+    <div class="app-page" data-page="home">
+      <div class="app-topbar">
+        <div class="app-title">Home page</div>
+      </div>
+      <div class="app-content">
+        <div class="app-section">
+          <div class="app-button" data-target="page2">Go to Page 2</div>
+		  <div class="app-button" data-target="page3">Go to Page 3</div>
+		  <div class="app-button" data-target="page3">Go to Page 3</div>
+		  <div class="app-button" data-target="page3">Go to Page 3</div>
+		  <div class="app-button" data-target="page3">Go to Page 3</div>
+		  <div class="app-button" data-target="page3">Go to Page 3</div>
+		  <div class="app-button" data-target="page3">Go to Page 3</div>
+		  <div class="app-button" data-target="page3">Go to Page 3</div>
+		  <div class="app-button" data-target="page3">Go to Page 3</div>
+		  <div class="app-button" data-target="page3">Go to Page 3</div>
+		  <div class="app-button" data-target="page3">Go to Page 3</div>
+		  <div class="app-button" data-target="page3">Go to Page 3</div>
+		  <div class="app-button" data-target="page3">Go to Page 3</div>
+		  <div class="app-web" data-target="pageInfo">
+		  <a href="https://beian.miit.gov.cn/">��ICP��16030276��-1</a></div>
         </div>
-
-        <div class="card bg-base-100 shadow-xl mb-6">
-            <div class="card-body">
-                <h2 class="card-title">代码示例分析</h2>
-                <div class="mockup-code">
-                    <pre><code>// main.cpp
-int a = 0;              // 全局初始化区
-char *p1;               // 全局未初始化区
-main() {
-    int b;              // 栈
-    char s[] = "abc";   // 栈
-    char *p2;           // 栈
-    char *p3 = "123456";// "123456\0"在常量区，p3在栈上
-    static int c = 0;   // 全局(静态)初始化区
-    p1 = (char *)malloc(10);  // 堆区
-    p2 = (char *)malloc(20);  // 堆区
-    strcpy(p1, "123456");     // "123456\0"放在常量区
-}</code></pre>
-                </div>
-            </div>
-        </div>
-
-        <div class="card bg-base-100 shadow-xl mb-6">
-            <div class="card-body">
-                <h2 class="card-title">函数调用时的堆栈变化</h2>
-                <div class="mockup-code">
-                    <pre><code>void __stdcall func(int param1, int param2, int param3) {
-    int var1 = param1;  // 栈
-    int var2 = param2;  // 栈
-    int var3 = param3;  // 栈
-    // ...
-}
-
-int main() {
-    func(1, 2, 3);  // 参数从右向左压栈: 3, 2, 1
-    return 0;
-}</code></pre>
-                </div>
-                <div class="overflow-x-auto">
-                    <table class="table table-zebra">
-                        <thead>
-                            <tr>
-                                <th>内存地址</th>
-                                <th>内容</th>
-                                <th>说明</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>0x0012ff78</td>
-                                <td>param1 (1)</td>
-                                <td>第一个参数</td>
-                            </tr>
-                            <tr>
-                                <td>0x0012ff7c</td>
-                                <td>param2 (2)</td>
-                                <td>第二个参数</td>
-                            </tr>
-                            <tr>
-                                <td>0x0012ff80</td>
-                                <td>param3 (3)</td>
-                                <td>第三个参数</td>
-                            </tr>
-                            <tr>
-                                <td>0x0012ff68</td>
-                                <td>var1</td>
-                                <td>局部变量1</td>
-                            </tr>
-                            <tr>
-                                <td>0x0012ff6c</td>
-                                <td>var2</td>
-                                <td>局部变量2</td>
-                            </tr>
-                            <tr>
-                                <td>0x0012ff70</td>
-                                <td>var3</td>
-                                <td>局部变量3</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <div class="card bg-base-100 shadow-xl mb-6">
-            <div class="card-body">
-                <h2 class="card-title">堆栈比喻</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="card bg-blue-50">
-                        <div class="card-body">
-                            <h3 class="card-title">栈的比喻</h3>
-                            <p>就像去饭馆吃饭：</p>
-                            <ul class="list-disc pl-5">
-                                <li>点菜(发出申请)</li>
-                                <li>付钱</li>
-                                <li>吃(使用)</li>
-                                <li>吃饱就走</li>
-                            </ul>
-                            <p class="mt-2">优点：快捷</p>
-                            <p>缺点：自由度小</p>
-                        </div>
-                    </div>
-                    <div class="card bg-green-50">
-                        <div class="card-body">
-                            <h3 class="card-title">堆的比喻</h3>
-                            <p>就像自己做饭：</p>
-                            <ul class="list-disc pl-5">
-                                <li>准备食材(申请内存)</li>
-                                <li>烹饪(使用内存)</li>
-                                <li>洗碗刷锅(释放内存)</li>
-                            </ul>
-                            <p class="mt-2">优点：符合自己口味，自由度大</p>
-                            <p>缺点：比较麻烦</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-sm text-gray-500 mt-8">
-            <p>本文来源：<a href="https://blog.csdn.net/yingms/article/details/53188974" class="link">关于堆栈的讲解(我见过的最经典的)</a></p>
-        </div>
+      </div>
     </div>
-</body>
+
+    <div class="app-page" data-page="page2">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Page 2</div>
+      </div>
+      <div class="app-content">
+		<div class="app-section">
+			Page 2 not lonely
+			<div class="app-button" data-target="page3">Go to Page 3</div>
+		</div>
+      </div>
+    </div>
+	<div class="app-page" data-page="page3">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Page 3</div>
+      </div>
+      <div class="app-content">
+        Page 3 is lonely
+      </div>
+    </div>
+	<div class="app-page" data-page="pageInfo">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Page pageInfo</div>
+      </div>
+      <div class="app-content">
+        Page pageInfo is lonely
+      </div>
+    </div>
+    <script src="zepto.js"></script>
+    <script src="app.min.js"></script>
+    <script>
+      App.controller('home', function (page) {
+        // put stuff here
+		console.log("console log home")
+      });
+
+      App.controller('page2', function (page) {
+        // put stuff here
+		console.log("console log page")
+      });
+	App.controller('pageInfo', function (page) {
+        // put stuff here
+		console.log("console log pageInfo")
+      });
+      try {
+        App.restore();
+      } catch (err) {
+        App.load('home');
+      }
+    </script>
+  </body>
 </html>
