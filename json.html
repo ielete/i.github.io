@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+   <meta charset="UTF-8">
+   <title>Fetch 加载 JSON</title>
+</head>
+<body>
+   <script>
+       fetch('./data.json')
+           .then(response => response.json())
+           .then(data => {
+               console.log(data); // 输出 JSON 数据
+           })
+           .catch(error => console.error('加载失败:', error));
+   </script>
+</body>
+</html>
