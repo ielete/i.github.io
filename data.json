@@ -1,5 +1,5 @@
 {
-    "sites": [
+    "AppList": [
     { "name":"TCBVD01" , "file":"TCBVD01.bin" }, 
     { "name":"TCBVD02" , "file":"TCBVD02.bin" }, 
     { "name":"TCBVD03" , "file":"TCBVD01.bin" }
