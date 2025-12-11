@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL 参数解析</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .param {
+            margin-bottom: 10px;
+        }
+        .param-name {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>URL 参数解析结果</h1>
+    <div id="params"></div>
+
+    <script>
+        // 解析URL参数
+        function getUrlParams() {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const params = {};
+
+            // 提取参数
+            params.d = urlParams.get('d');
+            params.dt = urlParams.get('dt');
+            params.c = urlParams.get('c');
+            params.b = urlParams.get('b');
+
+            return params;
+        }
+
+        // 显示参数
+        function displayParams() {
+            const params = getUrlParams();
+            const paramsContainer = document.getElementById('params');
+
+            for (const [key, value] of Object.entries(params)) {
+                const paramElement = document.createElement('div');
+                paramElement.className = 'param';
+                paramElement.innerHTML = `<span class="param-name">${key}:</span> ${value}`;
+                paramsContainer.appendChild(paramElement);
+            }
+        }
+
+        // 页面加载时显示参数
+        window.onload = displayParams;
+    </script>
+</body>
+</html>
