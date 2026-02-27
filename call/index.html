@@ -76,7 +76,7 @@
             var y = 40 + 10 * Math.random();//y轴方向位置为20-30随机
             var index = Math.floor(Math.random() * aCode.length);//随机索引值
             var txt = aCode[index];
-            context.font = "bold 20px 微软雅黑";//设置或返回文本内容的当前字体属性
+            context.font = "bold 50px 微软雅黑";//设置或返回文本内容的当前字体属性
             context.fillStyle=getColor();//设置或返回用于填充绘画的颜色、渐变或模式，随机
             context.translate(x,y);//重新映射画布上的 (0,0) 位置，字母不可以旋转移动，所以移动容器
             var deg=45*Math.random()*Math.PI/180;//0-90度随机旋转
