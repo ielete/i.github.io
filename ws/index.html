@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)https://wstool.js.org/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>WebSocket在线测试工具</title>
+    <meta name="description" content="WebSocket在线开发调试测试工具，支持ws和wss。">
+    <meta name="keywords" content="php,nodejs,swoole,websocket,websocket工具,swoole websocket,websocket client,ws,wss">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/qtcreator_light.min.css">
+    <link rel="shortcut icon" href="https://wstool.js.org/favicon.ico">
+</head>
+<body>
+
+<div id="root"><!----> <nav class="navbar navbar-dark bg-primary"><div class="container"><a href="javascript:void(0)" class="navbar-brand monospace"><span>WebSocket</span> <small>在线测试工具</small></a></div></nav> <div class="container mt-3 main-container"><div class="row monospace"><div class="col-sm-12"><div class="card"><div class="card-body"><div class="row"><div class="col-sm-12 col-md-5"><div class="col-sm-12"><h5 class="card-title">服务器配置 状态: 尚未创建</h5> <hr class="divider divider-dashed"> <div class="card-text"><div class="input-group"><div class="input-group-prepend"><div class="input-group-text">服务地址</div></div> <input type="text" placeholder="输入 WebSocket 服务器地址" class="form-control"> <div class="input-group-append"><button type="button" class="btn btn-block btn-success">开启连接</button></div></div></div></div> <div class="col-sm-12 mt-3"><h5 class="card-title">发包设置</h5> <hr class="divider divider-dashed"> <div class="card-text"><div class="input-group"><div class="input-group-prepend"><div class="input-group-text">每隔</div></div> <input title="" type="text" disabled="disabled" class="form-control text-center"> <div class="input-group-append input-group-prepend"><span class="input-group-text">秒发送内容</span></div> <input title="" type="text" disabled="disabled" class="form-control"> <div class="input-group-append"><button type="button" disabled="disabled" class="btn btn-block btn-success">开始发送</button></div></div></div> <div class="card-text mt-2"><textarea id="exampleTextarea" rows="2" placeholder="需要发送到服务端的内容" disabled="disabled" class="form-control mt-1"></textarea> <div class="custom-control custom-checkbox inline-flex mt-2"><input type="checkbox" id="sendClean" disabled="disabled" class="custom-control-input"> <label for="sendClean" class="custom-control-label">发包清空输入</label></div></div> <div class="card-text mt-2"><button disabled="disabled" class="btn btn-block btn-success">发送到服务端</button></div></div> <div class="col-sm-12 mt-3"><h5 class="card-title">调试消息</h5> <hr class="divider divider-dashed"> <div class="card-text"><div id="console-box" class="card-title console-box"><div class="mb-2"><strong class="text-success">19:30:12 =&gt; </strong> <span>初始化完成</span></div></div></div></div></div> <div class="col-sm-12 col-md-7"><div class="col-sm-12"><h5 class="card-title" style="display: inline;">消息记录</h5> <a href="javascript:void(0);">清空消息</a> <hr class="divider divider-dashed"> <div><div class="custom-control custom-checkbox inline-flex mt-2"><input type="checkbox" id="recvClean" disabled="disabled" class="custom-control-input"> <label for="recvClean" class="custom-control-label">收包清空记录</label></div> <div class="custom-control custom-checkbox inline-flex mt-2"><input type="checkbox" id="recvDecode" disabled="disabled" class="custom-control-input"> <label for="recvDecode" class="custom-control-label">收包JSON解码</label></div> <div class="custom-control custom-checkbox inline-flex mt-2"><input type="checkbox" id="recvPause" disabled="disabled" class="custom-control-input"> <label for="recvPause" class="custom-control-label">暂停接收</label></div></div> <hr class="divider divider-dashed"> <div id="message-box" class="card-text message-box"></div></div></div></div></div></div></div></div></div> <footer class="footer" style="text-align: center;">
+        友情链接：
+        <a href="https://qq52o.me/" target="_blank">asd</a> <a href="https://github.com/" target="_blank">GitHub</a></footer></div>
+
+<!-- 页面脚本 -->
+<script src="./js/hm.js"></script><script src="./js/vue.js"></script>
+<script src="./js/moment.min.js"></script>
+<script src="./js/highlight.min.js"></script>
+<script src="./js/json.min.js"></script>
+<script src="./js/format.js"></script>
+<script src="./js/socket.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?595b60d207c4492f168a963c79de1dc8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+</body></html>
