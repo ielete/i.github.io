@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebBLE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Web Bluetooth API Demo</h1>
+    <button id="connectButton">Connect to Bluetooth Device</button>
+    <div id="deviceInfo"></div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('connectButton').addEventListener('click', () => {
+            connectToDevice();
+        });
+    </script>
+</body>
+</html>
