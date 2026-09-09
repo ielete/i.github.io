@@ -1,0 +1,1341 @@
+{
+"RAM":
+ [
+	{"name": "Remaining Time Alarm", "show": 1, "sort": 1, "value": 0, "addr": "02", "unit": "min", "type": "U2"},
+	{"name": "Battery Mode", "show": 0, "sort": 1, "value": 0, "addr": "03", "unit": "hex", "type": "H2"},
+	{"name": "At Rate", "show": 1, "sort": 1, "value": 0, "addr": "04", "unit": "mA", "type": "I2"},
+	{"name": "At Rate To Full", "show": 1, "sort": 1, "value": 0, "addr": "05", "unit": "min", "type": "U2"},
+	{"name": "At Rate To Empty", "show": 1, "sort": 1, "value": 0, "addr": "06", "unit": "min", "type": "U2"},
+	{"name": "At Rate OK", "show": 1, "sort": 1, "value": 0, "addr": "07", "unit": "min", "type": "U2"},
+	{"name": "Temperature", "show": 1, "sort": 1, "value": 0, "addr": "08", "unit": "℃", "type": "I2-0.1K"},
+	{"name": "Voltage", "show": 1, "sort": 1, "value": 0, "addr": "09", "unit": "mV", "type": "U2"},
+	{"name": "Current", "show": 1, "sort": 1, "value": 0, "addr": "0A", "unit": "mA", "type": "I2"},
+	{"name": "Average Current", "show": 0, "sort": 1, "value": 0, "addr": "0B", "unit": "mA", "type": "I2"},
+	{"name": "Max Error", "show": 1, "sort": 1, "value": 0, "addr": "0C", "unit": "%", "type": "U2"},
+	{"name": "Relative State Of Charge", "show": 1, "sort": 1, "value": 0, "addr": "0D", "unit": "%",
+	 "type": "U2"},
+	{"name": "Absolute State Of Charge", "show": 1, "sort": 1, "value": 0, "addr": "0E", "unit": "%",
+	 "type": "U2"},
+	{"name": "Remaining Capacity", "show": 1, "sort": 1, "value": 0, "addr": "0F", "unit": "mAh", "type": "U2"},
+	{"name": "Full Charge Capacity", "show": 1, "sort": 1, "value": 0, "addr": "10", "unit": "mAh",
+	 "type": "U2"},
+	{"name": "Run Time To Empty", "show": 1, "sort": 1, "value": 0, "addr": "11", "unit": "min", "type": "U2"},
+	{"name": "Average Time To Empty", "show": 1, "sort": 1, "value": 0, "addr": "12", "unit": "min",
+	 "type": "U2"},
+	{"name": "Average Time To Full", "show": 1, "sort": 1, "value": 0, "addr": "13", "unit": "mAh",
+	 "type": "U2"},
+	{"name": "Charging Current", "show": 1, "sort": 1, "value": 0, "addr": "14", "unit": "mA", "type": "I2"},
+	{"name": "Charging Voltage", "show": 1, "sort": 1, "value": 0, "addr": "15", "unit": "mV", "type": "I2"},
+	{"name": "Battery Status", "show": 0, "sort": 1, "value": 0, "addr": "16", "unit": "hex", "type": "H2"},
+	{"name": "Cycle Count", "show": 1, "sort": 1, "value": 0, "addr": "17", "unit": "num", "type": "U2"},
+	{"name": "Design Capacity", "show": 1, "sort": 1, "value": 0, "addr": "18", "unit": "mAh", "type": "U2"},
+	{"name": "Design Voltage", "show": 1, "sort": 1, "value": 0, "addr": "19", "unit": "mV", "type": "U2"},
+	{"name": "Specification Info", "show": 0, "sort": 1, "value": 0, "addr": "1A", "unit": "hex", "type": "H2"},
+	{"name": "Manufacture Date", "show": 1, "sort": 1, "value": 0, "addr": "1B", "unit": "date", "type": "U2-date"},
+	{"name": "Serial Number", "show": 1, "sort": 1, "value": 0, "addr": "1C", "unit": "hex", "type": "H2"},
+
+	{"name": "Primary State of Health", "show": 1, "sort": 1, "value": 0, "addr": "32", "unit": "%", "type": "U2"},
+	{"name": "Primary Operation Status", "show": 0, "sort": 1, "value": 0, "addr": "33", "unit": "hex",
+	 "type": "H2"},
+	{"name": "Primary Charging Status", "show": 0, "sort": 1, "value": 0, "addr": "34", "unit": "hex",
+	 "type": "H2"},
+	{"name": "Primary Gauging Status", "show": 0, "sort": 1, "value": 0, "addr": "35", "unit": "hex",
+	 "type": "H2"},
+	{"name": "Primary Safety Alert", "show": 0, "sort": 1, "value": 0, "addr": "36", "unit": "hex",
+	 "type": "H2"},
+	{"name": "Primary Safety Status", "show": 0, "sort": 1, "value": 0, "addr": "37", "unit": "hex",
+	 "type": "H2"},
+	{"name": "Taper Voltage", "show": 1, "sort": 1, "value": 0, "addr": "40", "unit": "mV", "type": "I2"},
+	{"name": "First Taper Current", "show": 1, "sort": 1, "value": 0, "addr": "41", "unit": "mA", "type": "I2"},
+	{"name": "Second Taper Current", "show": 1, "sort": 1, "value": 0, "addr": "42", "unit": "mA",
+	 "type": "I2"},
+	{"name": "Average Voltage", "show": 1, "sort": 1, "value": 0, "addr": "43", "unit": "mV", "type": "I2"},
+	{"name": "Primary Temp Range", "show": 1, "sort": 1, "value": 0, "addr": "45", "unit": "hex", "type": "H2"},
+
+	{"name": "Cell 1 Volatage", "show": 1, "sort": 1, "value": 0, "addr": "440071", "offset": 0, "unit": "mV",
+	 "type": "U2"},
+	{"name": "Pack pin Volatage", "show": 1, "sort": 1, "value": 0, "addr": "440071", "offset": 10,
+	 "unit": "mV", "type": "U2"},
+	{"name": "Cell 1 Current", "show": 1, "sort": 1, "value": 0, "addr": "440071", "offset": 12, "unit": "mA",
+	 "type": "I2"},
+	{"name": "Cell 1 Power", "show": 1, "sort": 1, "value": 0, "addr": "440071", "offset": 20, "unit": "cW",
+	 "type": "I2"},
+	{"name": "Power", "show": 1, "sort": 1, "value": 0, "addr": "440071", "offset": 28, "unit": "cW",
+	 "type": "I2"},
+	{"name": "Average Power", "show": 1, "sort": 1, "value": 0, "addr": "440071", "offset": 30, "unit": "cW",
+	 "type": "I2"},
+
+	{"name": "Int Temperature", "show": 1, "sort": 1, "value": 0, "addr": "440072", "offset": 0, "unit": "℃","type": "I2-0.1K"},
+	{"name": "TS1 Temperature", "show": 1, "sort": 1, "value": 0, "addr": "440072", "offset": 2, "unit": "℃", "type": "I2-0.1K"},
+	{"name": "Cell Temperature", "show": 1, "sort": 1, "value": 0, "addr": "440072", "offset": 10, "unit": "℃", "type": "I2-0.1K"},
+	{"name": "Cell 1 Raw Voltage", "show": 1, "sort": 1, "value": 0, "addr": "440072", "offset": 14,"unit": "mV", "type": "U2"},
+	{"name": "Cell 1 Raw Current", "show": 1, "sort": 1, "value": 0, "addr": "440072", "offset": 16,"unit": "mA", "type": "I2"},
+
+	{"name": "True Rem Q", "show": 1, "sort": 1, "value": 0, "addr": "440073", "offset": 0, "unit": "mAh","type": "I2"},
+	{"name": "True Rem E", "show": 1, "sort": 1, "value": 0, "addr": "440073", "offset": 2, "unit": "cWh","type": "I2"},
+	{"name": "Initial Q", "show": 1, "sort": 1, "value": 0, "addr": "440073", "offset": 4, "unit": "mAh", "type": "U2"},
+	{"name": "Initial E", "show": 1, "sort": 1, "value": 0, "addr": "440073", "offset": 6, "unit": "cWh",
+	 "type": "U2"},
+	{"name": "True FCC Q", "show": 1, "sort": 1, "value": 0, "addr": "440073", "offset": 8, "unit": "mAh",	 "type": "U2"},
+	{"name": "True FCC E", "show": 1, "sort": 1, "value": 0, "addr": "440073", "offset": 10, "unit": "cWh",	 "type": "U2"},
+	{"name": "T_sim", "show": 1, "sort": 1, "value": 0, "addr": "440073", "offset": 12, "unit": "℃",	 "type": "I2-0.1K"},
+	{"name": "T_ambient", "show": 1, "sort": 1, "value": 0, "addr": "440073", "offset": 14, "unit": "℃",	 "type": "I2-0.1K"},
+	{"name": "Cell 1 RaScale", "show": 1, "sort": 1, "value": 0, "addr": "440073", "offset": 16, "unit": "/",	 "type": "I2"},
+	{"name": "Cell 1 CompRes", "show": 1, "sort": 1, "value": 0, "addr": "440073", "offset": 18, "unit": "mΩ",	 "type": "U2"},
+
+	{"name": "Pack Grid", "show": 1, "sort": 1, "value": 0, "addr": "440074", "offset": 0, "unit": "/",	 "type": "U1"},
+	{"name": "LStatus", "show": 1, "sort": 1, "value": 0, "addr": "440074", "offset": 1, "unit": "/",	 "type": "U1"},
+	{"name": "Cell 1 Grid", "show": 1, "sort": 1, "value": 0, "addr": "440074", "offset": 2, "unit": "/",	 "type": "U2"},
+	{"name": "State Time", "show": 1, "sort": 1, "value": 0, "addr": "440074", "offset": 6, "unit": "s",	 "type": "U4"},
+	{"name": "Cell 1 DOD0", "show": 1, "sort": 1, "value": 0, "addr": "440074", "offset": 10, "unit": "/",	 "type": "U2"},
+	{"name": "DOD0 Passed Q", "show": 1, "sort": 1, "value": 0, "addr": "440074", "offset": 12, "unit": "mAh",	 "type": "I2"},
+	{"name": "DOD0 Passed E", "show": 1, "sort": 1, "value": 0, "addr": "440074", "offset": 14, "unit": "cWh",	 "type": "I2"},
+	{"name": "DOD0 Time", "show": 1, "sort": 1, "value": 0, "addr": "440074", "offset": 16, "unit": "hr/16",	 "type": "U2"},
+	{"name": "Cell 1 DOD0EOC", "show": 1, "sort": 1, "value": 0, "addr": "440074", "offset": 18, "unit": "/",	 "type": "U2"},
+	{"name": "Cell 1 QMax", "show": 1, "sort": 1, "value": 0, "addr": "440075", "offset": 0, "unit": "mAh",	 "type": "U2"},
+	{"name": "Cell 1 QMax DOD0", "show": 1, "sort": 1, "value": 0, "addr": "440075", "offset": 2, "unit": "/",	 "type": "I2"},
+	{"name": "QMax Passed Q", "show": 1, "sort": 1, "value": 0, "addr": "440075", "offset": 4, "unit": "mAh",	 "type": "I2"},
+	{"name": "QMax Time", "show": 1, "sort": 1, "value": 0, "addr": "440075", "offset": 6, "unit": "hr/16",	 "type": "U2"},
+	{"name": "Temp k", "show": 1, "sort": 1, "value": 0, "addr": "440075", "offset": 8, "unit": "/",	 "type": "U2"},
+	{"name": "Temp a", "show": 1, "sort": 1, "value": 0, "addr": "440075", "offset": 10, "unit": "/",	 "type": "U2"},
+	{"name": "Cell 1 Raw DOD", "show": 1, "sort": 1, "value": 0, "addr": "440075", "offset": 12, "unit": "/",	 "type": "U2"},
+
+	{"name": "SoH FC@25C Q", "show": 1, "sort": 1, "value": 0, "addr": "440077", "offset": 0, "unit": "mAh",	 "type": "U2"},
+	{"name": "SoHFC@25C E", "show": 1, "sort": 1, "value": 0, "addr": "440077", "offset": 2, "unit": "cWh",	 "type": "U2"},
+
+	{"name": "Flt Rem Q", "show": 1, "sort": 1, "value": 0, "addr": "440078", "offset": 0, "unit": "mAh",	 "type": "U2"},
+	{"name": "Flt Rem E", "show": 1, "sort": 1, "value": 0, "addr": "440078", "offset": 2, "unit": "cWh",	 "type": "U2"},
+	{"name": "Flt Full Chg Q", "show": 1, "sort": 1, "value": 0, "addr": "440078", "offset": 4, "unit": "mAh",	 "type": "U2"},
+	{"name": "Flt Full Chg E", "show": 1, "sort": 1, "value": 0, "addr": "440078", "offset": 6, "unit": "cWh",	 "type": "U2"},
+
+	{"name": "Operation Status A", "show": 0, "sort": 1, "value": 0, "addr": "440054", "offset": 0,	 "unit": "hex", "type": "H2"},
+	{"name": "Operation Status B", "show": 0, "sort": 1, "value": 0, "addr": "440054", "offset": 2,	 "unit": "hex", "type": "H2"}
+ ],
+"REG":
+ [
+  {"name":"Battery Mode",
+   "valueHex": "0000",
+   "addr":"03",
+   "SHOW":1,
+   "bits":["CAPM", "CHGM", "AM", "RSVD", "RSVD", "RSVD", "PB", "CC",
+		   "CF", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "PBS", "ICC"],
+	"tips": ["CAPACITY Mode(cWh/mAh)", "CHARGER Mode","ALARM Mode", "RSVD", "RSVD", "RSVD", "Primary Battery", "Charge Controller Enabled",
+			 "Condition Flag", "RSVD","RSVD", "RSVD", "RSVD", "RSVD", "Primary Battery Support", "Internal Charge Controller"]
+	},
+  {"name":"Battery Status",
+   "valueHex": "0000",
+   "addr":"16",
+   "SHOW":1,
+   "bits":["RSVD", "TCA", "RSVD", "OTA", "TDA", "RSVD", "RCA", "RSVD",
+		   "INIT", "DSG", "FC", "FD", "RSVD", "RSVD", "RSVD", "RSVD"],
+	"tips": ["RSVD", "Terminate Charge Alarm","RSVD", "Over temperature Alarm", "Terminate Discharge Alarm", "RSVD", "Remaining Capacity Alarm", "RSVD",
+			 "Initialization", "Discharging or Relax","Fully Charged", "Fully Discharged", "RSVD", "RSVD", "RSVD", "RSVD"]
+	},
+  {"name":"Primary Operation Status",
+   "valueHex": "0000",
+   "addr":"33",
+   "SHOW":1,
+   "bits":["RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD",
+		   "CAL", "INIT", "SAFETY", "SHUT", "SHIP", "RSVD", "SLEEP", "NORMAL"],
+	"tips": ["RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD",
+			 "Calibration", "Initialization","Safety Status", "SHUTDOWN conditions active", "SHIP mode", "RSVD", "SLEEP mode", "NORMAL mode"]
+	},
+  {"name":"Primary Charging Status",
+   "valueHex": "0000",
+   "addr":"34",
+   "SHOW":1,
+   "bits":["RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "NCT", "VCT2", "VCT1",
+		   "RECHG", "SU", "IN", "HV", "MV", "LV", "TV", "PV"],
+	"tips": ["RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "Near Charge Termination", "2nd Valid Charge Termination", "1st Valid Charge Termination",
+			 "Re-Charging After 2nd Valid Charge Termination", "Charge Suspend","Charge Inhibit", "High Voltage Range", "Medium Voltage Range", 
+			 "Low Voltage Range", "Trickle Voltage Range", "Precharge Voltage Range"]
+	},
+  {"name":"Primary Gauging Status",
+   "valueHex": "0000",
+   "addr":"35",
+   "SHOW":1,
+   "bits":["RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD",
+		   "RSVD", "REST", "DSG", "EDV", "TC", "TD", "FC", "FD"],
+	"tips": ["RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD",
+			 "RSVD", "Rest Detected","Discharge Detected", "Terminate Voltage", "Terminate Charge", 
+			 "Terminate Discharge", "Full Charge", "Full Discharge"]
+	},
+  {"name":"Primary Safety Alert",
+   "valueHex": "0000",
+   "addr":"36",
+   "SHOW":1,
+   "bits":["RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "CTOS", "PTOS", "DUTP",
+		   "CUTP", "DOTP", "COTP", "DOCP", "COCP", "UVP", "OVP", "RSVD"],
+	"tips": ["RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "Fast Charge Timeout Suspend Protection", "Precharge Timeout Suspend Protection", "Under Temperature Protection in Discharging",
+		   "Under Temperature Protection in Charging", "Over Temperature Protection in Discharging", "Over Temperature Protection in Charging",
+		   "Discharge Over Current Protection", "Charge Over Current Protection", "Under Voltage Protection", "Over Voltage Protection", "RSVD"]
+	},
+  {"name":"Primary Safety Status",
+   "valueHex": "0000",
+   "addr":"37",
+   "SHOW":1,
+   "bits":["HSCP", "HDOC", "HCOCP", "HUVP", "HOVP", "CTO", "PTO", "DUTP",
+		   "CUTP", "DOTP", "COTP", "DOCP", "COCP", "UVP", "OVP", "RSVD"],
+	"tips": ["Hardware Short Circuit Discharge Protection", "Hardware Over Current Charge Protection", "Hardware Over Current Discharge Protection", ": Hardware Undervoltage Protection", 
+		   "Hardware Overvoltage Protection", "Fast Charge Timeout Protection", ": Precharge Timeout Protection", "Under Temperature Protection in Discharging",
+		   "Under Temperature Protection in Charging", "Over Temperature Protection in Discharging", "Over Temperature Protection in Charging",
+		   "Discharge Over Current Protection", "Charge Over Current Protection", "Under Voltage Protection", "Over Voltage Protection", "RSVD"]
+	},
+  {"name":"Primary Temp Range",
+   "valueHex": "0000",
+   "addr":"45",
+   "SHOW":1,
+   "bits":["RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD",
+		   "RSVD", "OT", "HT", "STH", "RT", "STL", "LT", "UT"],
+	"tips": ["RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD", "RSVD",
+			 "RSVD", "Over Temperature", "High Temperature", "Standard Temperature High", "Recommended Temperature", "Standard Temperature Low", "Low Temperature", "Under Temperature"]
+	},
+	 {"name":"Operation Status A",
+	"valueHex": "0000",
+	"addr":"45",
+	"SHOW":1,
+	"bits":["SLEEP", "XCHG", "XDSG", "RSVD", "SS", "SDV", "SEC1", "SCE0",
+		   "RSVD", "DP_SLP", "RSVD", "SHIP", "ZVCHG", "CHG", "DSG", "SHIPV"],
+	"tips": ["SLEEP mode conditions met", "Charging disabled", "Discharging disabled", "RSVD", "SAFETY status", "SHUTDOWN mode low cell voltage", "SECURITY mode", "SECURITY mode",
+	"RSVD", "SHELF mode", "RSVD", "Ship mode", "Zero volt charging status", "CHG FET status", "DSG FET status","SHIP mode"]
+	},
+	 {"name":"Operation Status B",
+	   "valueHex": "0000",
+	   "addr":"45",
+	   "SHOW":1,
+	   "bits":["SHELFV", "SHIPM", "RSVD", "RSVD", "RSVD", "SLPAD", "RSVD", "INIT",
+			   "DPSHELFM", "XL", "RSVD", "CAL", "RSVD", "AUTH", "RSVD", "SDM"],
+		"tips": ["SHELF mode triggere via low cell voltage", "SHIP mode triggered via command", "RSVD", "RSVD", "RSVD", "ADC Measurement in SLEEP, SHIP, or SHELF mode", "RSVD", "Initialization after full reset",
+				 "SHELF mode triggered via command", "400-kHz SMBus mode", "RSVD", "Calibration Output", "RSVD", "Authentication in progress", "RSVD","SHUTDOWN mode triggered via command"]
+	}
+  ],
+"COMMAND":
+ [
+  {"name":"Device Type", "cname":"bqType", "addr":"44", "icon":"sturn.png", "cmd": "02010079", "back": "0x04 0x01 0x00 0x45 0x17 =>/1745/ 0xCA"},
+  {"name":"Firmware Version", "cname":"fwVer", "addr":"44", "icon":"sturn.png",  "cmd": "02020046", "back": "0x0D 0x02 0x00 0x17 0x45 /0006/ 0x00 0x0D 0x01 0x04 0x75 0x02 0x00 0x79"},
+  {"name":"Hardware Version", "cname":"hwVer", "addr":"44", "icon":"sturn.png",  "cmd": "02030053", "back": "0x04 0x03 0x00 0xA1 0x00=>/00A1/ 0x94"},
+  {"name":"Chem ID", "cname":"chemID", "addr":"44", "icon":"sturn.png",  "cmd":"02060012", "back": "0x04 0x06 0x00 0x48 0x55 => /5548/ 0x88"},
+  {"name":"Device Reset", "cname":"Reset", "addr":"44","icon":"ssend.png",  "cmd": "02410022", "back": "N/A"},
+  {"name":"Seal", "cname":"SEAL", "addr":"44","icon":"sealu.png", "cmd": "02300095", "back": "N/A"},
+  {"name":"UN seal", "cname":"UNSEAL", "addr":"44","icon":"seald.png", "cmd": "66668888", "back": "N/A"},
+  {"name":"UN seal Full", "cname":"UNSEALFULL", "addr":"44","icon":"sealf.png", "cmd": "FFFFFFFF", "back": "N/A"}
+  ],
+"Memory":
+ [
+	 {"Class":"Calibration",
+	   "Sub":[
+			  {"Subclass":"Voltage",
+			   "item":[
+						{"name":"Cell Gain", "addr":"4000", "type":"U2", "unit":"-","enable": 1},
+						{"name":"Pack Gain", "addr":"4002", "type":"U2", "unit":"-","enable": 1}
+			      ]
+			  },
+			  {"Subclass":"Current",
+			   "item":[
+						{"name":"CC Gain", "addr":"4006", "type":"F4cc", "unit":"mOhm","enable": 1},
+						{"name":"Capacity Gain", "addr":"400A", "type":"F4ca", "unit":"mOhm","enable": 1}
+			          ]
+			  },
+			  {"Subclass":"Temperature",
+			   "item":[
+						{"name":"Internal Temp Offset", "addr":"4014", "type":"I1-0.1", "unit":"℃","enable": 1},
+						{"name":"External1 Temp Offset", "addr":"4015", "type":"I1-0.1", "unit":"℃","enable": 1}
+			          ]
+			  },
+			  {"Subclass":"Internal Temp Model",
+			   "item":[
+						{"name":"Int Gain", "addr":"43C0", "type":"I2", "unit":"-","enable": 1},
+						{"name":"Int base offset", "addr":"43C2", "type":"I2", "unit":"-","enable": 1},
+						{"name":"Int Minimum AD", "addr":"43C4", "type":"I2", "unit":"-","enable": 1},
+						{"name":"Int Maximum Temp", "addr":"43C6", "type":"I2", "unit":"0.1°K","enable": 1}
+			          ]
+			  },
+			  {"Subclass":"Cell Temperature Model",
+			   "item":[
+						{"name":"Coeff a1", "addr":"43C8", "type":"I2", "unit":"-","enable": 1},
+						{"name":"Coeff a2", "addr":"43CA", "type":"I2", "unit":"-","enable": 1},
+						{"name":"Coeff a3", "addr":"43CC", "type":"I2", "unit":"-","enable": 1},
+						{"name":"Coeff a4", "addr":"43CE", "type":"I2", "unit":"-","enable": 1},
+						{"name":"Coeff a5", "addr":"43D0", "type":"I2", "unit":"-","enable": 1},
+						{"name":"Coeff b1", "addr":"43D2", "type":"I2", "unit":"-","enable": 1},
+						{"name":"Coeff b2", "addr":"43D4", "type":"I2", "unit":"-","enable": 1},
+						{"name":"Coeff b3", "addr":"43D6", "type":"I2", "unit":"-","enable": 1},
+						{"name":"Coeff b4", "addr":"43D8", "type":"I2", "unit":"-","enable": 1},
+						{"name":"Rc0", "addr":"43DA", "type":"I2", "unit":"-","enable": 1},
+						{"name":"Adc0", "addr":"43DC", "type":"I2", "unit":"-","enable": 1},
+						{"name":"Rpad", "addr":"43DE", "type":"I2", "unit":"-","enable": 1},
+						{"name":"Rint", "addr":"43E0", "type":"I2", "unit":"-","enable": 1}
+			          ]
+			  },
+		      {"Subclass":"Current Deadband",
+			   "item":[
+						{"name":"Deadband", "addr":"43E6", "type":"U1", "unit":"mA","enable": 1},
+						{"name":"Coulomb Counter Deadband", "addr":"43E7", "type":"U1", "unit":"116nV","enable": 1}
+			          ]
+			  }
+
+			]
+	 },
+	 {"Class":"Protections",
+	  "Sub":[
+			 {"Subclass":"HW Threshold Targets",
+			   "item":[
+					  {"name":"OVP", "addr":"4020", "type":"U2", "unit":"mV","enable": 1},
+					  {"name":"UVP", "addr":"4022", "type":"U2", "unit":"mV","enable": 1},
+					  {"name":"OCC", "addr":"4024", "type":"I2-0.1", "unit":"mV","enable": 1},
+					  {"name":"OCD", "addr":"4026", "type":"I2-0.1", "unit":"mV","enable": 1},
+					  {"name":"SCD", "addr":"4028", "type":"I2-0.1", "unit":"mV","enable": 1},
+					  {"name":"I-Wake", "addr":"402A", "type":"I2-0.1", "unit":"mV","enable": 1},
+					  {"name":"BDP", "addr":"402C", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"BCP", "addr":"402E", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"BDN", "addr":"4030", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"BCN", "addr":"4032", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"Field Cal", "addr":"4034", "type":"H2", "unit":"hex","enable": 1},
+					  {"name":"Field Config", "addr":"4036", "type":"H1", "unit":"hex","enable": 1}
+					 ]
+			  },
+			 {"Subclass":"CUV",
+			   "item":[
+					  {"name":"Threshold", "addr":"4641", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"Delay", "addr":"4643", "type":"U1", "unit":"s","enable": 1},
+					  {"name":"Recovery", "addr":"4644", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"Recovery Delay", "addr":"4646", "type":"U1", "unit":"s","enable": 1}
+					 ]
+			 },
+			 {"Subclass":"HCUV",
+			   "item":[
+					  {"name":"Recovery", "addr":"4647", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"Recovery Chg", "addr":"4649", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"Recovery Delay", "addr":"464B", "type":"U1", "unit":"s","enable": 1}
+					 ]
+			 },
+			 {"Subclass":"COV",
+			   "item":[
+					  {"name":"Threshold Low Temp", "addr":"464C", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"Threshold Standard Temp Low", "addr":"464E", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"Threshold Standard Temp High", "addr":"4650", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"Threshold High Temp", "addr":"4652", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"Threshold Rec Temp", "addr":"4654", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"Delay", "addr":"4656", "type":"U1", "unit":"s","enable": 1},
+					  {"name":"Recovery Low Temp", "addr":"4657", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"Recovery Standard Temp Low", "addr":"4659", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"Recovery Standard Temp High", "addr":"465B", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"Recovery High Temp", "addr":"465D", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"Recovery Rec Temp", "addr":"465F", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"Recovery Delay", "addr":"4661", "type":"U1", "unit":"s","enable": 1}
+					 ]
+			 },
+			 {"Subclass":"HCOV",
+			   "item":[
+					  {"name":"Recovery", "addr":"4662", "type":"I2", "unit":"mV","enable": 1},
+					  {"name":"Recovery Delay", "addr":"4664", "type":"U1", "unit":"s","enable": 1}
+					 ]
+			 },
+			 {"Subclass":"OCC",
+			   "item":[
+					  {"name":"Threshold", "addr":"4665", "type":"I2", "unit":"mA","enable": 1},
+					  {"name":"Delay", "addr":"4667", "type":"U1", "unit":"s","enable": 1},
+					  {"name":"Recovery Threshold", "addr":"4668", "type":"I2", "unit":"mA","enable": 1},
+					  {"name":"Recovery Delay", "addr":"466A", "type":"U1", "unit":"s","enable": 1}
+					 ]
+			 },
+			 {"Subclass":"HOCC",
+			   "item":[
+					  {"name":"Recovery Threshold", "addr":"466B", "type":"I2", "unit":"mA","enable": 1},
+					  {"name":"Recovery Delay", "addr":"466D", "type":"U1", "unit":"s","enable": 1}
+					 ]
+			 },
+			 {"Subclass":"OCD",
+			   "item":[
+					  {"name":"Threshold", "addr":"466E", "type":"I2", "unit":"mA","enable": 1},
+					  {"name":"Delay", "addr":"4670", "type":"U1", "unit":"s","enable": 1},
+					  {"name":"Recovery Threshold", "addr":"4671", "type":"I2", "unit":"mA","enable": 1},
+					  {"name":"Recovery Delay", "addr":"4673", "type":"U1", "unit":"s","enable": 1}
+					 ]
+			 },
+			 {"Subclass":"HOCD",
+			   "item":[
+					  {"name":"Recovery Threshold", "addr":"4674", "type":"I2", "unit":"mA","enable": 1},
+					  {"name":"Recovery Delay", "addr":"4676", "type":"U1", "unit":"s","enable": 1}
+					 ]
+			 },
+			 {"Subclass":"HSCD",
+			   "item":[
+					  {"name":"Recovery Threshold", "addr":"4677", "type":"I2", "unit":"mA","enable": 1},
+					  {"name":"Recovery Delay", "addr":"4679", "type":"U1", "unit":"s","enable": 1}
+					 ]
+			 },
+			 {"Subclass":"OTC",
+			   "item":[
+					  {"name":"Threshold", "addr":"467A", "type":"I2-0.1", "unit":"℃","enable": 1},
+					  {"name":"Delay", "addr":"467C", "type":"U1", "unit":"s","enable": 1},
+					  {"name":"Recovery ", "addr":"467D", "type":"I2-0.1", "unit":"℃","enable": 1}
+					 ]
+			 },
+			 {"Subclass":"OTD",
+			   "item":[
+					  {"name":"Threshold", "addr":"467F", "type":"I2-0.1", "unit":"℃","enable": 1},
+					  {"name":"Delay", "addr":"4681", "type":"U1", "unit":"s","enable": 1},
+					  {"name":"Recovery ", "addr":"4682", "type":"I2-0.1", "unit":"℃","enable": 1}
+					 ]
+			 },
+			 {"Subclass":"UTC",
+			   "item":[
+					  {"name":"Threshold", "addr":"4684", "type":"I2-0.1", "unit":"℃","enable": 1},
+					  {"name":"Delay", "addr":"4686", "type":"U1", "unit":"s","enable": 1},
+					  {"name":"Recovery ", "addr":"4687", "type":"I2-0.1", "unit":"℃","enable": 1}
+					 ]
+			 },
+			 {"Subclass":"UTD",
+			   "item":[
+					  {"name":"Threshold", "addr":"4689", "type":"I2-0.1", "unit":"℃","enable": 1},
+					  {"name":"Delay", "addr":"468B", "type":"U1", "unit":"s","enable": 1},
+					  {"name":"Recovery ", "addr":"468C", "type":"I2-0.1", "unit":"℃","enable": 1}
+					 ]
+			 },
+			 {"Subclass":"PTO",
+			   "item":[
+					  {"name":"Charge Threshold", "addr":"468E", "type":"I2", "unit":"mA","enable": 1},
+					  {"name":"Suspend Threshold", "addr":"4690", "type":"I2", "unit":"mA","enable": 1},
+					  {"name":"Delay ", "addr":"4692", "type":"U2", "unit":"s","enable": 1}
+					 ]
+			 },
+			 {"Subclass":"CTO",
+			   "item":[
+					  {"name":"Charge Threshold", "addr":"4694", "type":"I2", "unit":"mA","enable": 1},
+					  {"name":"Suspend Threshold", "addr":"4696", "type":"I2", "unit":"mA","enable": 1},
+					  {"name":"Delay", "addr":"4698", "type":"U2", "unit":"s","enable": 1}
+					 ]
+			 }
+			]
+	 },
+	 {"Class":"Settings",
+		"Sub":[
+			{"Subclass":"Protection",
+			 "item":[
+				{"name":"Protection Configuration", "addr":"463C", "type":"H1", "unit":"hex","enable": 1},
+				{"name":"Enabled Protections A", "addr":"463D", "type":"H1", "unit":"hex","enable": 1},
+				{"name":"Enabled Protections B", "addr":"463E", "type":"H1", "unit":"hex","enable": 1},
+				{"name":"Enabled Protections C", "addr":"463F", "type":"H1", "unit":"hex","enable": 1},
+				{"name":"Enabled Protections D", "addr":"4640", "type":"H1", "unit":"hex","enable": 1}
+			 ]
+			},
+			{"Subclass":"Batt Sence",
+			 "item":[
+				{"name":"Batt Sense Options", "addr":"462B", "type":"H1", "unit":"hex","enable": 1},
+				{"name":"Batt Sense Config", "addr":"462C", "type":"H1", "unit":"hex","enable": 1},
+				{"name":"RLO Charge Config", "addr":"462D", "type":"H1", "unit":"hex","enable": 1},
+				{"name":"RLO Charge Threshold", "addr":"462E", "type":"I2", "unit":"mA","enable": 1},
+				{"name":"Buffer Mode Threshold", "addr":"4630", "type":"I2", "unit":"Mv","enable": 1},
+				{"name":"Buffer Mode Delay", "addr":"4632", "type":"U1", "unit":"s","enable": 1},
+				{"name":"Buffer Mode Recovery", "addr":"4633", "type":"I2", "unit":"Mv","enable": 1},
+				{"name":"Buffer Mode PACK Margin", "addr":"4635", "type":"I2", "unit":"Mv","enable": 1},
+				{"name":"Transition Config", "addr":"4637", "type":"H1", "unit":"hex","enable": 1},
+				{"name":"Transition Delay", "addr":"4638", "type":"U2", "unit":"2μs","enable": 1},
+				{"name":"Protection Enable Delay", "addr":"463A", "type":"U1", "unit":"ms","enable": 1},
+				{"name":"Protection Recovery Delay", "addr":"463B", "type":"U1", "unit":"s","enable": 1}
+			 ]
+			},
+			{"Subclass":"Configuration",
+			 "item":[
+				{"name":"Re-Charge RSOC Threshold", "addr":"4617", "type":"U1", "unit":"%","enable": 1},
+				{"name":"Re-Charge Delta Voltage", "addr":"4618", "type":"I2", "unit":"mv","enable": 1},
+				{"name":"Temperature Enable", "addr":"461A", "type":"H1", "unit":"hex","enable": 1},
+				{"name":"DA Configuration", "addr":"461B", "type":"H2", "unit":"hex","enable": 1},
+				{"name":"FET Options", "addr":"4580", "type":"H2", "unit":"hex","enable": 1},
+				{"name":"SBS Gauging Configuration", "addr":"4582", "type":"H1", "unit":"hex","enable": 1},
+				{"name":"SBS Configuration", "addr":"4583", "type":"H2", "unit":"hex","enable": 1},
+				{"name":"Auth Config", "addr":"4585", "type":"H1", "unit":"hex","enable": 1},
+				{"name":"Power Config", "addr":"4586", "type":"H2", "unit":"hex","enable": 1},
+				{"name":"IO Config", "addr":"458A", "type":"H1", "unit":"hex","enable": 1},
+				{"name":"Samsung Config", "addr":"458B", "type":"H1", "unit":"hex","enable": 1},
+				{"name":"SOC Flag Config A", "addr":"458D", "type":"H2", "unit":"hex","enable": 1},
+				{"name":"SOC Flag Config B", "addr":"458F", "type":"H1", "unit":"hex","enable": 1},
+				{"name":"IT Gauging Configuration", "addr":"45D8", "type":"H2", "unit":"hex","enable": 1},
+				{"name":"IT Gauging Ext", "addr":"45DC", "type":"H2", "unit":"hex","enable": 1}
+			 ]
+			},
+			{"Subclass":"AFE",
+			 "item":[
+				{"name":"ZVCHG Exit Threshold", "addr":"461E", "type":"I2", "unit":"mV","enable": 1},
+				{"name":"ZVCHG PACK Threshold", "addr":"4620", "type":"I2", "unit":"mV","enable": 1}
+			 ]
+			},
+			{"Subclass":"SMBUS",
+			 "item":[
+				{"name":"Address", "addr":"458C", "type":"H1", "unit":"-","enable": 1},
+				{"name":"Address Check", "addr":"458D", "type":"H1", "unit":"-","enable": 1}
+			 ]
+			},
+			{"Subclass":"Lifetimes",
+			 "item":[
+				{"name":"Lifetimes Configuration", "addr":"469A", "type":"H2", "unit":"hex","enable": 1},
+				{"name":"Time RSOC Threshold A", "addr":"469D", "type":"U1", "unit":"%","enable": 1},
+				{"name":"Time RSOC Threshold B", "addr":"469E", "type":"U1", "unit":"%","enable": 1},
+				{"name":"Time RSOC Threshold C", "addr":"469F", "type":"U1", "unit":"%","enable": 1},
+				{"name":"Time RSOC Threshold D", "addr":"46A0", "type":"U1", "unit":"%","enable": 1},
+				{"name":"Time RSOC Threshold E", "addr":"46A1", "type":"U1", "unit":"%","enable": 1},
+				{"name":"Time RSOC Threshold F", "addr":"46A2", "type":"U1", "unit":"%","enable": 1},
+				{"name":"Time RSOC Threshold G", "addr":"46A3", "type":"U1", "unit":"%","enable": 1}
+			 ]
+			},
+			{"Subclass":"Manufacturing",
+			 "item":[
+				{"name":"Mfg Status init", "addr":"4380", "type":"H2", "unit":"hex","enable": 1}
+			 ]
+			}
+		]
+	 },
+	 {"Class":"Advanced Charge Algorithm",
+		"Sub":[
+			{"Subclass":"Temperature Ranges",
+			 "item":[
+				{"name":"T1 Temp", "addr":"45F8", "type":"I1", "unit":"℃","enable": 1},
+				{"name":"T2 Temp", "addr":"45F9", "type":"I1", "unit":"℃","enable": 1},
+				{"name":"T5 Temp", "addr":"45FA", "type":"I1", "unit":"℃","enable": 1},
+				{"name":"T6 Temp", "addr":"45FB", "type":"I1", "unit":"℃","enable": 1},
+				{"name":"T3 Temp", "addr":"45FC", "type":"I1", "unit":"℃","enable": 1},
+				{"name":"T4 Temp", "addr":"45FD", "type":"I1", "unit":"℃","enable": 1},
+				{"name":"Hysteresis Temp", "addr":"45FE", "type":"I1", "unit":"℃","enable": 1}
+			 ]
+			},
+			{"Subclass":"Voltage Range",
+			 "item":[
+				{"name":"Trickle Charge Start Voltage", "addr":"45FF", "type":"I2", "unit":"mV","enable": 1},
+				{"name":"Charging Voltage Low", "addr":"4601", "type":"I2", "unit":"mV","enable": 1},
+				{"name":"Charging Voltage Med", "addr":"4603", "type":"I2", "unit":"mV","enable": 1},
+				{"name":"Charging Voltage High", "addr":"4605", "type":"I2", "unit":"mV","enable": 1},
+				{"name":"Charging Voltage Hysteresis", "addr":"4607", "type":"U1", "unit":"mV","enable": 1}
+			 ]
+			},
+			{"Subclass":"Host Controlled",
+			 "item":[
+				{"name":"Default Charging Current", "addr":"4608", "type":"I2", "unit":"mA","enable": 1},
+				{"name":"Default Charging Voltage", "addr":"460A", "type":"I2", "unit":"mV","enable": 1},
+				{"name":"Min Charging Voltage", "addr":"460C", "type":"I2", "unit":"mV","enable": 1}
+			 ]
+			},
+			{"Subclass":"Termination Config",
+			 "item":[
+				{"name":"Charge Term Taper Current", "addr":"460E", "type":"I2", "unit":"mA","enable": 1},
+				{"name":"Second Charge Term Taper Current", "addr":"4610", "type":"I2", "unit":"mA","enable": 1},
+				{"name":"Charge Term Voltage", "addr":"4614", "type":"I2", "unit":"mV","enable": 1}
+			 ]
+			}
+		  ]
+	 },
+	 {"Class":"Gas Gauging",
+		"Sub":[
+			{"Subclass":"Current Thresholds",
+				"item":[
+					{"name":"Dsg Current Threshold", "addr":"4623", "type":"I2", "unit":"mA","enable": 1},
+					{"name":"Chg Current Threshold", "addr":"4625", "type":"I2", "unit":"mA","enable": 1},
+					{"name":"Quit Current", "addr":"4627", "type":"I2", "unit":"mA","enable": 1},
+					{"name":"Dsg Relax Time", "addr":"4629", "type":"U1", "unit":"s","enable": 1},
+					{"name":"Chg Relax Time", "addr":"462A", "type":"U1", "unit":"s","enable": 1}
+				]
+			},
+			{"Subclass":"Max Load",
+				"item":[
+					{"name":"Max Load Current", "addr":"45A6", "type":"I2", "unit":"mA","enable": 1},
+					{"name":"Max Load Rsoc", "addr":"45A8", "type":"U1", "unit":"%","enable": 1}
+				]
+			},
+			{"Subclass":"Design",
+				"item":[
+					{"name":"Design Capacity mAh", "addr":"45B5", "type":"I2", "unit":"mAh","enable": 1},
+					{"name":"Design Capacity cWh", "addr":"45B7", "type":"U2", "unit":"cWh","enable": 1},
+					{"name":"Design Voltage", "addr":"45B9", "type":"U2", "unit":"mV","enable": 1}
+				]
+			},
+			{"Subclass":"Cycle",
+				"item":[
+					{"name":"Cycle Count Percentage", "addr":"45BB", "type":"U1", "unit":"%","enable": 1}
+				]
+			},
+			{"Subclass":"FD",
+				"item":[
+					{"name":"Set Voltage Threshold", "addr":"45C0", "type":"I2", "unit":"mV","enable": 1},
+					{"name":"Clear Voltage Threshold", "addr":"45C2", "type":"I2", "unit":"mV","enable": 1},
+					{"name":"Set % RSOC Threshold", "addr":"45C4", "type":"U1", "unit":"%","enable": 1},
+					{"name":"Clear % RSOC Threshold", "addr":"45C5", "type":"U1", "unit":"%","enable": 1}
+				]
+			},
+			{"Subclass":"FC",
+				"item":[
+					{"name":"Set Voltage Threshold", "addr":"45C6", "type":"I2", "unit":"mV","enable": 1},
+					{"name":"Clear Voltage Threshold", "addr":"45C8", "type":"I2", "unit":"mV","enable": 1},
+					{"name":"Set % RSOC Threshold", "addr":"45CA", "type":"U1", "unit":"%","enable": 1},
+					{"name":"Clear % RSOC Threshold", "addr":"45CB", "type":"U1", "unit":"%","enable": 1}
+				]
+			},
+			{"Subclass":"TD",
+				"item":[
+					{"name":"Set Voltage Threshold", "addr":"45CC", "type":"I2", "unit":"mV","enable": 1},
+					{"name":"Clear Voltage Threshold", "addr":"45CE", "type":"I2", "unit":"mV","enable": 1},
+					{"name":"Set % RSOC Threshold", "addr":"45D0", "type":"U1", "unit":"%","enable": 1},
+					{"name":"Clear % RSOC Threshold", "addr":"45D1", "type":"U1", "unit":"%","enable": 1}
+				]
+			},
+			{"Subclass":"TC",
+				"item":[
+					{"name":"Set Voltage Threshold", "addr":"45D2", "type":"I2", "unit":"mV","enable": 1},
+					{"name":"Clear Voltage Threshold ?", "addr":"45C4", "type":"I2", "unit":"mV","enable": 1},
+					{"name":"Set % RSOC Threshold", "addr":"45D6", "type":"U1", "unit":"%","enable": 1},
+					{"name":"Clear % RSOC Threshold", "addr":"45D7", "type":"U1", "unit":"%","enable": 1}
+				]
+			},
+			{"Subclass":"State",
+				"item":[
+					{"name":"Cycle Count", "addr":"41C0", "type":"U2", "unit":"-","enable": 1},
+					{"name":"Qmax Cell 1", "addr":"4186", "type":"I2", "unit":"mAh","enable": 1},
+					{"name":"Qmax Cycle Count", "addr":"4188", "type":"U2", "unit":"-","enable": 1},
+					{"name":"Update Status", "addr":"418A", "type":"H1", "unit":"hex","enable": 1},
+					{"name":"Cell 1 Chg Voltage at EoC", "addr":"418B", "type":"I2", "unit":"mV","enable": 1},
+					{"name":"Current at EoC", "addr":"418D", "type":"I2", "unit":"mA","enable": 1},
+					{"name":"Avg I Last Run", "addr":"418F", "type":"I2", "unit":"mA","enable": 1},
+					{"name":"Avg P Last Run", "addr":"4191", "type":"I2", "unit":"cW","enable": 1},
+					{"name":"Delta Voltage", "addr":"4193", "type":"I2", "unit":"mV","enable": 1},
+					{"name":"Temp k", "addr":"4195", "type":"I2-0.01", "unit":"℃/256mW","enable": 1},
+					{"name":"Temp a", "addr":"4197", "type":"I2", "unit":"s","enable": 1},
+					{"name":"Max Avg I Last Run", "addr":"4199", "type":"I2", "unit":"mA","enable": 1},
+					{"name":"Max Avg P Last Run", "addr":"419B", "type":"I2", "unit":"cW","enable": 1},
+					{"name":"SOH Temp k", "addr":"4576", "type":"I2-0.01", "unit":"℃/256mW","enable": 1},
+					{"name":"SOH Temp a", "addr":"4578", "type":"I2", "unit":"s","enable": 1}
+				]
+			},
+			{"Subclass":"IT Cfg",
+				"item":[
+					{"name":"Load Select", "addr":"45DE", "type":"U1", "unit":"-","enable": 1},
+					{"name":"Load Mode", "addr":"45DF", "type":"U1", "unit":"-","enable": 1},
+					{"name":"User Rate-mA", "addr":"45E0", "type":"I2", "unit":"mA","enable": 1},
+					{"name":"User Rate-cW", "addr":"45E2", "type":"I2", "unit":"cW","enable": 1},
+					{"name":"Reserve Cap-mAh", "addr":"45E4", "type":"I2", "unit":"mAh","enable": 1},
+					{"name":"Reserve Cap-cWh", "addr":"45E6", "type":"I2", "unit":"cWh","enable": 1},
+					{"name":"Predict Ambient Time", "addr":"45F5", "type":"U2", "unit":"s","enable": 1},
+					{"name":"Design Resistance", "addr":"4180", "type":"I2", "unit":"mΩ","enable": 1},
+					{"name":"Pack Resistance", "addr":"4182", "type":"I2", "unit":"mΩ","enable": 1},
+					{"name":"System Resistance", "addr":"4184", "type":"I2", "unit":"mΩ","enable": 1},
+					{"name":"Ra Filter", "addr":"450E", "type":"U2-0.1", "unit":"%","enable": 1},
+					{"name":"Ra Max Delta", "addr":"4511", "type":"U1", "unit":"%","enable": 1},
+					{"name":"Resistance Parameter Filter", "addr":"4514", "type":"U2", "unit":"-","enable": 1},
+					{"name":"Near EDV Ra Param Filter", "addr":"4516", "type":"U2", "unit":"-","enable": 1},
+					{"name":"Cell 1 Interconnect Resistance", "addr":"4518", "type":"I2", "unit":"mOhm","enable": 1},
+					{"name":"Max Current Change %", "addr":"451A", "type":"U1", "unit":"%","enable": 1},
+					{"name":"Resistance Update Voltage", "addr":"451B", "type":"U2", "unit":"mV","enable": 1},
+					{"name":"Qmax Delta", "addr":"453F", "type":"U1", "unit":"%","enable": 1},
+					{"name":"Qmax Upper Bound", "addr":"4540", "type":"U1", "unit":"%","enable": 1},
+					{"name":"OCV Pred Active T Limit", "addr":"4541", "type":"U2", "unit":"s","enable": 1},
+					{"name":"OCV Pred Transient T", "addr":"4543", "type":"U2", "unit":"s","enable": 1},
+					{"name":"OCV Pred Measure Time", "addr":"4545", "type":"U2", "unit":"s","enable": 1},
+					{"name":"Term Voltage", "addr":"4547", "type":"I2", "unit":"mV","enable": 1},
+					{"name":"Term V Hold Time", "addr":"4549", "type":"U1", "unit":"s","enable": 1},
+					{"name":"Term Voltage Delta", "addr":"454A", "type":"I2", "unit":"mV","enable": 1},
+					{"name":"Max Simulation Iterations", "addr":"4555", "type":"U1", "unit":"-","enable": 1},
+					{"name":"Simulation Near Term Delta", "addr":"4556", "type":"I2", "unit":"mV","enable": 1},
+					{"name":"Fast Scale Start SOC", "addr":"4568", "type":"U1", "unit":"%","enable": 1},
+					{"name":"Min Delta Voltage", "addr":"4571", "type":"I2", "unit":"mV","enable": 1}
+				]
+			},
+			{"Subclass":"Smoothing",
+				"item":[
+					{"name":"Smooth Relax Time", "addr":"45E8", "type":"U2", "unit":"s"},
+					{"name":"Term Smooth Start Cell V Delta", "addr":"45EA", "type":"I2", "unit":"mV"},
+					{"name":"Term Smooth Final Cell V Delta", "addr":"45EC", "type":"I2", "unit":"mV"},
+					{"name":"Term Smooth Time", "addr":"45EE", "type":"U1", "unit":"s"}
+				]
+			},
+			{"Subclass":"Max Error",
+				"item":[
+					{"name":"Time Cycle Equivalent", "addr":"45F3", "type":"U1-2", "unit":"h"},
+					{"name":"Cycle Delta", "addr":"45F4", "type":"U1-0.01", "unit":"%"}
+				]
+			},
+			{"Subclass":"SoH",
+				"item":[
+					{"name":"SoH Load Rate", "addr":"4575", "type":"U1-0.1", "unit":"Hr rate"}
+				]
+			}
+		]
+	 },
+	 {"Class":"Power",
+		"Sub":[
+			{"Subclass":"Power",
+				"item":[
+					{"name":"Valid Update Voltage", "addr":"458E", "type":"I2", "unit":"mV","enable": 0}
+				]
+			},
+			{"Subclass":"Shutdown",
+				"item":[
+					{"name":"Shutdown Voltage", "addr":"4590", "type":"I2", "unit":"mV","enable": 0},
+					{"name":"Shutdown Time", "addr":"4592", "type":"U1", "unit":"s","enable": 0},
+					{"name":"Charger Present Threshold", "addr":"4593", "type":"I2", "unit":"mV","enable": 0}
+				]
+			},
+			{"Subclass":"Sleep",
+				"item":[
+					{"name":"Sleep Current", "addr":"4595", "type":"I2", "unit":"mA","enable": 0},
+					{"name":"Sleep Delay", "addr":"4597", "type":"U1", "unit":"s","enable": 0},
+					{"name":"Voltage Time", "addr":"4598", "type":"U1", "unit":"s","enable": 0}
+				]
+			},
+			{"Subclass":"Ship",
+				"item":[
+					{"name":"FET Off Time", "addr":"4599", "type":"U1", "unit":"s","enable": 0},
+					{"name":"Delay", "addr":"459A", "type":"U1", "unit":"s","enable": 0},
+					{"name":"Auto Ship Time", "addr":"45A9", "type":"U2", "unit":"min","enable": 0}
+				]
+			},
+			{"Subclass":"Shipmode",
+				"item":[
+					{"name":"Shipmode Voltage Threshold", "addr":"459B", "type":"I2", "unit":"mV","enable": 0},
+					{"name":"Shipmode Voltage Delay", "addr":"459D", "type":"U1", "unit":"s","enable": 0},
+					{"name":"Shipmode Command Delay", "addr":"459E", "type":"U1", "unit":"s","enable": 0},
+					{"name":"Shipmode Measure Time", "addr":"459F", "type":"U1", "unit":"s","enable": 0}
+				]
+			},
+			{"Subclass":"Shelf",
+				"item":[
+					{"name":"Shelf Voltage Threshold", "addr":"45A0", "type":"I2", "unit":"mV","enable": 0},
+					{"name":"Shelf Voltage Delay", "addr":"45A2", "type":"U1", "unit":"s","enable": 0},
+					{"name":"Shelf Command Delay", "addr":"45A3", "type":"U1", "unit":"s","enable": 0},
+					{"name":"Shelf Measure Time", "addr":"45A4", "type":"U1", "unit":"s","enable": 0},
+					{"name":"Shelf Exit Holdoff", "addr":"45A5", "type":"U1", "unit":"s","enable": 0}
+				]
+			}
+		]
+	 },
+	 {"Class":"System Data",
+		"Sub":[
+			{"Subclass":"Manufacturer Data",
+				"item":[
+					{"name":"Manufacturer Info Block A01", "addr":"4041", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A02", "addr":"4042", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A03", "addr":"4043", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A04", "addr":"4044", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A05", "addr":"4045", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A06", "addr":"4046", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A07", "addr":"4047", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A08", "addr":"4048", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A09", "addr":"4049", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A10", "addr":"404A", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A11", "addr":"404B", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A12", "addr":"404C", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A13", "addr":"404D", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A14", "addr":"404E", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A15", "addr":"404F", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A16", "addr":"4050", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A17", "addr":"4051", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A18", "addr":"4052", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A19", "addr":"4053", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A20", "addr":"4054", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A21", "addr":"4055", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A22", "addr":"4056", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A23", "addr":"4057", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A24", "addr":"4058", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A25", "addr":"4059", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A26", "addr":"405A", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A27", "addr":"405B", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A28", "addr":"405C", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A29", "addr":"405D", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A30", "addr":"405E", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A31", "addr":"405F", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block A32", "addr":"4060", "type":"H1", "unit":"hex","enable": 0}
+				]
+			},
+			{"Subclass":"Manufacturer Info B",
+				"item":[
+					{"name":"Manufacturer Info Block B01", "addr":"4062", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B02", "addr":"4063", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B03", "addr":"4064", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B04", "addr":"4065", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B05", "addr":"4066", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B06", "addr":"4067", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B07", "addr":"4068", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B08", "addr":"4069", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B09", "addr":"406A", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B10", "addr":"406B", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B11", "addr":"406C", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B12", "addr":"406D", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B13", "addr":"406E", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B14", "addr":"406F", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B15", "addr":"4070", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B16", "addr":"4071", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B17", "addr":"4072", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B18", "addr":"4073", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B19", "addr":"4074", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B20", "addr":"4075", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B21", "addr":"4076", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B22", "addr":"4077", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B23", "addr":"4078", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B24", "addr":"4079", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B25", "addr":"407A", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B26", "addr":"407B", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B27", "addr":"407C", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B28", "addr":"407D", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B29", "addr":"407E", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B30", "addr":"407F", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B31", "addr":"4080", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block B32", "addr":"4081", "type":"H1", "unit":"hex","enable": 0}
+				]
+			},
+			{"Subclass":"Manufacturer Info C",
+				"item":[
+					{"name":"Manufacturer Info Block C01", "addr":"4083", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C02", "addr":"4084", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C03", "addr":"4085", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C04", "addr":"4086", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C05", "addr":"4087", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C06", "addr":"4088", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C07", "addr":"4089", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C08", "addr":"408A", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C09", "addr":"408B", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C10", "addr":"408C", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C11", "addr":"408D", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C12", "addr":"408E", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C13", "addr":"408F", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C14", "addr":"4090", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C15", "addr":"4091", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C16", "addr":"4092", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C17", "addr":"4093", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C18", "addr":"4094", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C19", "addr":"4095", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C20", "addr":"4096", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C21", "addr":"4097", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C22", "addr":"4098", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C23", "addr":"4099", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C24", "addr":"409A", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C25", "addr":"409B", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C26", "addr":"409C", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C27", "addr":"409D", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C28", "addr":"409E", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C29", "addr":"409F", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C30", "addr":"40A0", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C31", "addr":"40A1", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block C32", "addr":"40A2", "type":"H1", "unit":"hex","enable": 0}
+				]
+			},
+			{"Subclass":"Manufacturer Info D",
+				"item":[
+					{"name":"Manufacturer Info Block D01", "addr":"40A4", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D02", "addr":"40A5", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D03", "addr":"40A6", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D04", "addr":"40A7", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D05", "addr":"40A8", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D06", "addr":"40A9", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D07", "addr":"40AA", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D08", "addr":"40AB", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D09", "addr":"40AC", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D10", "addr":"40AD", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D11", "addr":"40AE", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D12", "addr":"40AF", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D13", "addr":"40B0", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D14", "addr":"40B1", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D15", "addr":"40B2", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D16", "addr":"40B3", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D17", "addr":"40B4", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D18", "addr":"40B5", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D19", "addr":"40B6", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D20", "addr":"40B7", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D21", "addr":"40B8", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D22", "addr":"40B9", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D23", "addr":"40BA", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D24", "addr":"40BB", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D25", "addr":"40BC", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D26", "addr":"40BD", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D27", "addr":"40BE", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D28", "addr":"40BF", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D29", "addr":"40C1", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D30", "addr":"40C2", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D31", "addr":"40C3", "type":"H1", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Info Block D32", "addr":"40C4", "type":"H1", "unit":"hex","enable": 0}
+				]
+			},
+			{"Subclass":"Integrity",
+				"item":[
+					{"name":"Static DF Signature", "addr":"40C4", "type":"H2", "unit":"hex","enable": 0},
+					{"name":"Static Chem DF Signature", "addr":"40C6", "type":"H2", "unit":"hex","enable": 0},
+					{"name":"All DF Signature", "addr":"40C8", "type":"H2", "unit":"hex","enable": 0}
+				]
+			}
+
+		]
+	 },
+	 {"Class":"SBS Configuration",
+		"Sub":[
+			{"Subclass":"Data",
+				"item":[
+					{"name":"Remaining AH Cap. Alarm", "addr":"45AB", "type":"I2", "unit":"mAh","enable": 0},
+					{"name":"Remaining WH Cap. Alarm", "addr":"45AD", "type":"I2", "unit":"cWh","enable": 0},
+					{"name":"Remaining Time Alarm", "addr":"45AF", "type":"U2", "unit":"min","enable": 0},
+					{"name":"Initial Battery Mode", "addr":"45B1", "type":"H2", "unit":"hex","enable": 0},
+					{"name":"Specification Information", "addr":"45B3", "type":"H2", "unit":"hex","enable": 0},
+					{"name":"Manufacture Date", "addr":"40CA", "type":"U2-date", "unit":"date","enable": 0},
+					{"name":"Serial Number", "addr":"40CC", "type":"H2", "unit":"hex","enable": 0},
+					{"name":"Manufacturer Name", "addr":"40CE", "type":"SF", "unit":"-","enable": 0},
+					{"name":"Device Name", "addr":"40E3", "type":"S9", "unit":"-","enable": 0},
+					{"name":"Device Chemistry", "addr":"40F8", "type":"S5", "unit":"-","enable": 0}
+				]
+			}
+		]
+	 },
+	 {"Class":"Lifetimes",
+		"Sub":[
+			{"Subclass":"Voltage",
+				"item":[
+					{"name":"Cell 1 Max Voltage", "addr":"4200", "type":"I2", "unit":"mV","enable": 0},
+					{"name":"Cell 1 Min Voltage", "addr":"4202", "type":"I2", "unit":"mV","enable": 0}
+				]
+			},
+			{"Subclass":"Current",
+				"item":[
+					{"name":"Max Charge Current", "addr":"4204", "type":"I2", "unit":"mA","enable": 0},
+					{"name":"Max Discharge Current", "addr":"4206", "type":"I2", "unit":"mA","enable": 0},
+					{"name":"Max Avg Dsg Current", "addr":"4208", "type":"I2", "unit":"mA","enable": 0},
+					{"name":"Max Avg Dsg Power", "addr":"420A", "type":"I2", "unit":"cW","enable": 0}
+				]
+			},
+			{"Subclass":"Temperature",
+				"item":[
+					{"name":"Max Charge Current", "addr":"420C", "type":"I1", "unit":"℃","enable": 0},
+					{"name":"Max Discharge Current", "addr":"420D", "type":"I1", "unit":"℃","enable": 0},
+					{"name":"Max Avg Dsg Current", "addr":"420E", "type":"I1", "unit":"℃","enable": 0},
+					{"name":"Max Avg Dsg Power", "addr":"420F", "type":"I1", "unit":"℃","enable": 0}
+				]
+			},
+			{"Subclass":"Safety Events",
+				"item":[
+					{"name":"No Of COV Events", "addr":"4210", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last COV Event", "addr":"4212", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Of CUV Events", "addr":"4214", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last CUV Event", "addr":"4216", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Of OCD Events", "addr":"4218", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last OCD Event", "addr":"421A", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Of OCC Events", "addr":"421C", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last OCC Event", "addr":"421E", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Of UTC Events", "addr":"4220", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last UTC Event", "addr":"4222", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Of HSCD Events", "addr":"4224", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last HSCD Event", "addr":"4226", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Of UTD Events", "addr":"4228", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last UTD Event", "addr":"422A", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Of OTC Events", "addr":"422C", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last OTC Event", "addr":"422E", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Of OTD Events", "addr":"4230", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last OTD Event", "addr":"4232", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Of PTO Events", "addr":"4248", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last PTO Event", "addr":"424A", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Of CTO Events", "addr":"424C", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last CTO Event", "addr":"424E", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Of HCOV Events", "addr":"4258", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last HCOV Event", "addr":"425A", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Of HCUV Events", "addr":"425C", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last HCUV Event", "addr":"425E", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Of HOCC Events", "addr":"4260", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last HOCC Event", "addr":"4262", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Of HOCD Events", "addr":"4264", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last HOCD Event", "addr":"4266", "type":"U2", "unit":"cycles","enable": 0}
+				]
+			},
+			{"Subclass":"Charging Events",
+				"item":[
+					{"name":"No Valid Charge Term", "addr":"4238", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last Valid Charge Term", "addr":"423A", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Valid Charge Term2", "addr":"4250", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last Valid Charge Term2", "addr":"4252", "type":"U2", "unit":"cycles","enable": 0}
+				]
+			},
+			{"Subclass":"Gauging Events",
+				"item":[
+					{"name":"No Of Qmax Updates", "addr":"423C", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last Qmax Update", "addr":"423E", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Of Ra Updates", "addr":"4240", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last Ra Update", "addr":"4242", "type":"U2", "unit":"cycles","enable": 0},
+					{"name":"No Of Ra Disable", "addr":"4244", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last Ra Disable", "addr":"4246", "type":"U2", "unit":"cycles","enable": 0}
+				]
+			},
+			{"Subclass":"Discharging Events",
+				"item":[
+					{"name":"No Full Discharge", "addr":"4254", "type":"U2", "unit":"events","enable": 0},
+					{"name":"Last Full Discharge", "addr":"4256", "type":"U2", "unit":"cycles","enable": 0}
+				]
+			},
+			{"Subclass":"Power Events",
+				"item":[
+					{"name":"No Of Shutdowns", "addr":"4268", "type":"U1", "unit":"events","enable": 0}
+				]
+			},
+			{"Subclass":"Time",
+				"item":[
+					{"name":"Total Fw Runtime", "addr":"426C", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Total Charge Time", "addr":"4270", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Total Discharge Time", "addr":"4274", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In UT RSOC A", "addr":"4278", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In UT RSOC B", "addr":"427C", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In UT RSOC C", "addr":"4280", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In UT RSOC D", "addr":"4284", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In UT RSOC E", "addr":"4288", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In UT RSOC F", "addr":"428C", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In UT RSOC G", "addr":"4290", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In UT RSOC H", "addr":"4294", "type":"U4", "unit":"s","enable": 0},
+					
+					{"name":"Time Spent In LT RSOC A", "addr":"4298", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In LT RSOC B", "addr":"429C", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In LT RSOC C", "addr":"42A0", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In LT RSOC D", "addr":"42A4", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In LT RSOC E", "addr":"42A8", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In LT RSOC F", "addr":"42AC", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In LT RSOC G", "addr":"42B0", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In LT RSOC H", "addr":"42B4", "type":"U4", "unit":"s","enable": 0},
+					
+					{"name":"Time Spent In STL RSOC A", "addr":"42B8", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In STL RSOC B", "addr":"42BC", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In STL RSOC C", "addr":"42C0", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In STL RSOC D", "addr":"42C4", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In STL RSOC E", "addr":"42C8", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In STL RSOC F", "addr":"42CC", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In STL RSOC G", "addr":"42D0", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In STL RSOC H", "addr":"42D4", "type":"U4", "unit":"s","enable": 0},
+					
+					{"name":"Time Spent In RT RSOC A", "addr":"42D8", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In RT RSOC B", "addr":"42DC", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In RT RSOC C", "addr":"42E0", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In RT RSOC D", "addr":"42E4", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In RT RSOC E", "addr":"42E8", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In RT RSOC F", "addr":"42EC", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In RT RSOC G", "addr":"42F0", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In RT RSOC H", "addr":"42F4", "type":"U4", "unit":"s","enable": 0},
+					
+					{"name":"Time Spent In STH RSOC A", "addr":"42F8", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In STH RSOC B", "addr":"42FC", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In STH RSOC C", "addr":"4300", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In STH RSOC D", "addr":"4304", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In STH RSOC E", "addr":"4308", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In STH RSOC F", "addr":"430C", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In STH RSOC G", "addr":"4310", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In STH RSOC H", "addr":"4314", "type":"U4", "unit":"s","enable": 0},
+					
+					{"name":"Time Spent In HT RSOC A", "addr":"4318", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In HT RSOC B", "addr":"431C", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In HT RSOC C", "addr":"4320", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In HT RSOC D", "addr":"4324", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In HT RSOC E", "addr":"4328", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In HT RSOC F", "addr":"432C", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In HT RSOC G", "addr":"4330", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In HT RSOC H", "addr":"4334", "type":"U4", "unit":"s","enable": 0},
+
+					{"name":"Time Spent In OT RSOC A", "addr":"4338", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In OT RSOC B", "addr":"433C", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In OT RSOC C", "addr":"4340", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In OT RSOC D", "addr":"4344", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In OT RSOC E", "addr":"4348", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In OT RSOC F", "addr":"434C", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In OT RSOC G", "addr":"4350", "type":"U4", "unit":"s","enable": 0},
+					{"name":"Time Spent In OT RSOC H", "addr":"4354", "type":"U4", "unit":"s","enable": 0}
+				]
+			}
+		]
+	 },
+	 {"Class":"Ra Table",
+		"Sub":[
+			{"Subclass":"R_a0",
+				"item":[
+					{"name":"Cell0 R_a flag", "addr":"4100", "type":"H2", "unit":"-","enable": 0},
+					{"name":"Cell0 R_a 0", "addr":"4102", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"Cell0 R_a 1", "addr":"4104", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"Cell0 R_a 2", "addr":"4106", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"Cell0 R_a 3", "addr":"4108", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"Cell0 R_a 4", "addr":"410A", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"Cell0 R_a 5", "addr":"410C", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"Cell0 R_a 6", "addr":"410E", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"Cell0 R_a 7", "addr":"4110", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"Cell0 R_a 8", "addr":"4112", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"Cell0 R_a 9", "addr":"4114", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"Cell0 R_a 10", "addr":"4116", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"Cell0 R_a 11", "addr":"4118", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"Cell0 R_a 12", "addr":"411A", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"Cell0 R_a 13", "addr":"411C", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"Cell0 R_a 14", "addr":"411E", "type":"I2", "unit":"mOhm","enable": 0}
+				]
+			},
+			{"Subclass":"R_a0x",
+				"item":[
+					{"name":"xCell0 R_a flag", "addr":"4140", "type":"H2", "unit":"-","enable": 0},
+					{"name":"xCell0 R_a 0", "addr":"4142", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"xCell0 R_a 1", "addr":"4144", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"xCell0 R_a 2", "addr":"4146", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"xCell0 R_a 3", "addr":"4148", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"xCell0 R_a 4", "addr":"414A", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"xCell0 R_a 5", "addr":"414C", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"xCell0 R_a 6", "addr":"414E", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"xCell0 R_a 7", "addr":"4150", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"xCell0 R_a 8", "addr":"4152", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"xCell0 R_a 9", "addr":"4154", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"xCell0 R_a 10", "addr":"4156", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"xCell0 R_a 11", "addr":"4158", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"xCell0 R_a 12", "addr":"415A", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"xCell0 R_a 13", "addr":"415C", "type":"I2", "unit":"mOhm","enable": 0},
+					{"name":"xCell0 R_a 14", "addr":"415E", "type":"I2", "unit":"mOhm","enable": 0}
+				]
+			}
+		]
+	 }
+ ],
+"MemoryMID":
+ [
+	{"Class":"Configuration",
+		"Sub":[
+			{"Subclass":"Safety",
+		     "item":[
+				{"name":"OT Set Threshold", "offset":0, "type":"I2-0.1", "unit":"°C", "default":60.5,"enable": 0},
+				{"name":"OT Time", "offset":2, "type":"U1", "unit":"s", "default":30,"enable": 0},
+				{"name":"OT Recovery", "offset":4, "type":"I2-0.1", "unit":"°C", "default":45.5,"enable": 0}
+				]
+			},
+			{"Subclass":"Charge Termination",
+		     "item":[
+				{"name":"Taper Current", "offset":6, "type":"U2", "unit":"mA", "default":120,"enable": 0},
+				{"name":"Min Taper Capacity", "offset":8, "type":"U2", "unit":"mAh", "default":15,"enable": 0},
+				{"name":"Taper Voltage", "offset":10, "type":"U2", "unit":"mV", "default":10,"enable": 0},
+				{"name":"Current Taper Window", "offset":12, "type":"U1", "unit":"s", "default":40,"enable": 0},
+				{"name":"FC Set %", "offset":13, "type":"I1", "unit":"%", "default":-1,"enable": 0},
+				{"name":"FC Clear %", "offset":14, "type":"I1", "unit":"%", "default":98,"enable": 0},
+				{"name":"DODatEOC Delta T", "offset":16, "type":"I2-0.1", "unit":"°C", "default":5.0,"enable": 0},
+				{"name":"Default Charging Voltage", "offset":18, "type":"U2", "unit":"mV", "default":4450,"enable": 0},
+				{"name":"Min Charging Voltage", "offset":20, "type":"U2", "unit":"mV", "default":4430,"enable": 0},
+				{"name":"Charging Table", "offset":22, "type":"U2", "unit":"Num", "default":10,"enable": 0}
+				]
+			},
+			{"Subclass":"Data",
+		     "item":[
+				{"name":"Cycle Count", "offset":24, "type":"U2", "unit":"num", "default":2,"enable": 1},
+				{"name":"CC Threshold", "offset":26, "type":"U2", "unit":"mAh", "default":2888,"enable": 0},
+				{"name":"Design Capacity", "offset":28, "type":"U2", "unit":"mAh", "default":2798,"enable": 0},
+				{"name":"Design Energy", "offset":30, "type":"U2", "unit":"Egy", "default":10350,"enable": 0},
+				{"name":"Design Energy Scale", "offset":32, "type":"U1", "unit":"num", "default":1,"enable": 0}
+				]
+			},
+			{"Subclass":"Discharge",
+		     "item":[
+				{"name":"SOC1 Set Threshold", "offset":34, "type":"U2", "unit":"mAh", "default":0,"enable": 0},
+				{"name":"SOC2 Set Threshold", "offset":36, "type":"U2", "unit":"mAh", "default":40,"enable": 0},
+				{"name":"SOC3 Set Threshold", "offset":38, "type":"U2", "unit":"mAh", "default":100,"enable": 0},
+				{"name":"SOC1 Clear Threshold", "offset":40, "type":"U2", "unit":"mAh", "default":40,"enable": 0},
+				{"name":"SOC2 Clear Threshold", "offset":42, "type":"U2", "unit":"mAh", "default":100,"enable": 0},
+				{"name":"SOC3 Clear Threshold", "offset":44, "type":"U2", "unit":"mAh", "default":150,"enable": 0},
+				{"name":"SOCF Alarm Initial", "offset":46, "type":"U1", "unit":"10mAh", "default":4,"enable": 0},
+				{"name":"SOCF Alarm Hysteresis", "offset":47, "type":"U1", "unit":"10mAh", "default":0,"enable": 0},
+				{"name":"LOWV Alarm Set", "offset":48, "type":"U2", "unit":"mV", "default":3200,"enable": 0},
+				{"name":"LOWV Alarm Clear", "offset":50, "type":"U2", "unit":"mV", "default":3500,"enable": 0},
+				{"name":"LOWV Alarm Delay", "offset":52, "type":"U1", "unit":"s", "default":10,"enable": 0}
+				]
+			},
+			{"Subclass":"Integrity Data",
+		     "item":[
+				{"name":"All DF Checksum", "offset":54, "type":"H2", "unit":"hex", "default":"6666","enable": 0},
+				{"name":"Static Chem DF Checksum", "offset":56, "type":"H2", "unit":"hex","default":"8888","enable": 0},
+				{"name":"Static DF Checksum", "offset":58, "type":"H2", "unit":"hex", "default":"FFFF","enable": 0}
+				]
+			},
+			{"Subclass":"Lifetime Data",
+		     "item":[
+				{"name":"Lifetime Max Temp", "offset":60, "type":"I2-0.1", "unit":"°C", "default":86,"enable": 0},
+				{"name":"Lifetime Min Temp", "offset":62, "type":"I2-0.1", "unit":"°C", "default":16,"enable": 0},
+				{"name":"Lifetime Max Pack Voltage", "offset":64, "type":"U2", "unit":"mV", "default":4489,"enable": 0},
+				{"name":"Lifetime Min Pack Voltage", "offset":66, "type":"U2", "unit":"mV", "default":2800,"enable": 0},
+				{"name":"Lifetime Max Chg Current", "offset":68, "type":"I2", "unit":"mA", "default":4000,"enable": 0},
+				{"name":"Lifetime Max Dsg Current", "offset":70, "type":"I2", "unit":"mA", "default":-3900,"enable": 0},
+				{"name":"Lifetime Max Ovr Chg Cap", "offset":72, "type":"U2", "unit":"mAh", "default":3100,"enable": 0},
+				{"name":"Lifetime Max Ovr Dsg Cap", "offset":74, "type":"U2", "unit":"mAh", "default":3210,"enable": 0},
+				{"name":"Lifetime Max FCC", "offset":76, "type":"U2", "unit":"mAh", "default":2999,"enable": 0},
+				{"name":"Lifetime Min FCC", "offset":78, "type":"U2", "unit":"mAh", "default":2500,"enable": 0},
+				{"name":"Lifetime Max DeltaV", "offset":80, "type":"U2", "unit":"mV", "default":4489,"enable": 0},
+				{"name":"Lifetime Min DeltaV", "offset":82, "type":"U2", "unit":"mV", "default":6,"enable": 0},
+				{"name":"Lifetime Low Avg I Last Run", "offset":84, "type":"I2", "unit":"mA", "default":-250,"enable": 0},
+				{"name":"Lifetime High Avg I Last Run", "offset":86, "type":"I2", "unit":"mA", "default":-1200,"enable": 0},
+				{"name":"Lifetime Max Qmax", "offset":88, "type":"U2", "unit":"mAh", "default":2988,"enable": 0},
+				{"name":"Lifetime Min Qmax", "offset":90, "type":"U2", "unit":"mAh", "default":2861,"enable": 0},
+				{"name":"Lifetime Max Ra 0-8", "offset":92, "type":"U2", "unit":"2^-10ohm", "default":130,"enable": 0},
+				{"name":"Lifetime Min Ra 0-8", "offset":94, "type":"U2", "unit":"2^-10ohm", "default":32,"enable": 0},
+				{"name":"Lifetime Max Ra 8", "offset":96, "type":"U2", "unit":"2^-10ohm", "default":128,"enable": 0},
+				{"name":"Lifetime Min Ra 8", "offset":98, "type":"U2", "unit":"2^-10ohm", "default":28,"enable": 0},
+				{"name":"Lifetime Avg Temp", "offset":100, "type":"U1", "unit":"°C", "default":46,"enable": 0}
+				] 
+			},
+			{"Subclass":"Lifetime Temp Samples",
+		     "item":[
+				{"name":"LT Temp Samples", "offset":104, "type":"U4", "unit":"Counts", "default":654255,"enable": 0},
+				{"name":"LT Reset Cnt", "offset":108, "type":"U1", "unit":"Counts", "default":1,"enable": 0},
+				{"name":"LT Flash Cnt", "offset":110, "type":"U2", "unit":"Counts", "default":1,"enable": 0},
+				{"name":"RDIS Cnt", "offset":112, "type":"U2", "unit":"Counts", "default":1,"enable": 0},
+				{"name":"LT Cyc Since Prev Qmax", "offset":114, "type":"U1", "unit":"num", "default":99,"enable": 0},
+				{"name":"Total Operating Time", "offset":116, "type":"U2", "unit":"Hrs", "default":88,"enable": 0},
+				{"name":"Time At High SOC Range 0", "offset":118, "type":"U1", "unit":"%", "default":5,"enable": 0},
+				{"name":"Time At High SOC Range 1", "offset":119, "type":"U1", "unit":"%", "default":5,"enable": 0},
+				{"name":"Time At High SOC Range 2", "offset":120, "type":"U1", "unit":"%", "default":5,"enable": 0},
+				{"name":"Time At High SOC Range 3", "offset":121, "type":"U1", "unit":"%", "default":5,"enable": 0},
+				{"name":"Qmax Update Success Count", "offset":122, "type":"U2", "unit":"num", "default":5,"enable": 0},
+				{"name":"Qmax Update Fail Count", "offset":124, "type":"U2", "unit":"num", "default":5,"enable": 0}
+				]
+			},
+			{"Subclass":"Registers",
+		     "item":[
+				{"name":"Pack Configuration", "offset":126, "type":"H2", "unit":"flags", "default":"71F0","enable": 0},
+				{"name":"Pack Configuration B", "offset":128, "type":"H1", "unit":"flags", "default":"F7","enable": 0},
+				{"name":"Pack Configuration C", "offset":129, "type":"H1", "unit":"flags", "default":"07","enable": 0}
+				]
+			},
+			{"Subclass":"Lifetime Resolution",
+		     "item":[
+				{"name":"LT Temp Res", "offset":130, "type":"I1-0.1", "unit":"°C", "default":1.2,"enable": 0},
+				{"name":"LT V Res", "offset":131, "type":"U1", "unit":"mV", "default":25,"enable": 0},
+				{"name":"LT Cur Res", "offset":132, "type":"U1", "unit":"mA", "default":100,"enable": 0},
+				{"name":"LT Ovr Under Chg Res", "offset":133, "type":"U1", "unit":"mAh", "default":1,"enable": 0},
+				{"name":"LT FCC Res", "offset":134, "type":"U1", "unit":"mAh", "default":1,"enable": 0},
+				{"name":"LT DeltaV Res", "offset":135, "type":"U1", "unit":"mV", "default":1,"enable": 0},
+				{"name":"LT Avg I Last Run Res", "offset":136, "type":"U1", "unit":"mA", "default":1,"enable": 0},
+				{"name":"LT Qmax Res", "offset":137, "type":"U1", "unit":"mAh", "default":1,"enable": 0},
+				{"name":"LT Ra 0-8 Res", "offset":138, "type":"U1", "unit":"2^-10ohm", "default":1,"enable": 0},
+				{"name":"LT Ra 8 Res", "offset":139, "type":"U1", "unit":"2^-10ohm", "default":1,"enable": 0},
+				{"name":"LT Update Time", "offset":140, "type":"U2", "unit":"s", "default":60,"enable": 0},
+				{"name":"LT Temp Range 0", "offset":142, "type":"U1", "unit":"°C", "default":32,"enable": 0},
+				{"name":"LT Temp Range 1", "offset":143, "type":"U1", "unit":"°C", "default":34,"enable": 0},
+				{"name":"LT Temp Range 2", "offset":144, "type":"U1", "unit":"°C", "default":36,"enable": 0},
+				{"name":"LT High SOC", "offset":145, "type":"U1", "unit":"%", "default":100,"enable": 0}
+				]
+			},
+			{"Subclass":"Power",
+		     "item":[
+				{"name":"Flash Update OK Voltage", "offset":146, "type":"U2", "unit":"mV", "default":2800,"enable": 0},
+				{"name":"Sleep Current", "offset":148, "type":"U2", "unit":"mA", "default":8,"enable": 0},
+				{"name":"Sleep Voltage Time", "offset":150, "type":"U1", "unit":"s", "default":8,"enable": 0},
+				{"name":"Sleep Current Time", "offset":151, "type":"U1", "unit":"s", "default":8,"enable": 0},
+				{"name":"Hibernate I", "offset":152, "type":"I2", "unit":"mA", "default":8,"enable": 0},
+				{"name":"Hibernate V", "offset":154, "type":"U2", "unit":"mV", "default":2550,"enable": 0},
+				{"name":"FS Wait", "offset":156, "type":"U1", "unit":"s", "default":8,"enable": 0},
+				{"name":"Sleep V", "offset":158, "type":"U2", "unit":"mV", "default":3600,"enable": 0}
+				]
+			}
+		]
+	},
+	{"Class":"Gas Gauging",
+		"Sub":[
+			{"Subclass":"IT Cfg",
+			 "item":[
+				{"name":"Load Select", "offset":160, "type":"U1", "unit":"num", "default":1,"enable": 0},
+				{"name":"Load Mode", "offset":161, "type":"U1", "unit":"num", "default":1,"enable": 0},
+				{"name":"Max Dsg Duration Max", "offset":162, "type":"U2", "unit":"s", "default":100,"enable": 0},
+				{"name":"Max Dsg Duration Min", "offset":164, "type":"U2", "unit":"s", "default":10,"enable": 0},
+				{"name":"Sec. Relax Time", "offset":166, "type":"U2", "unit":"s", "default":30,"enable": 0},
+				{"name":"Res Data Int", "offset":168, "type":"U2", "unit":"s", "default":30,"enable": 0},
+				{"name":"Average Time", "offset":170, "type":"U1", "unit":"Counts", "default":8,"enable": 0},
+				{"name":"Res Current", "offset":172, "type":"U2", "unit":"Hr rate", "default":10,"enable": 0},
+				{"name":"Min DOD Res Update", "offset":174, "type":"U1", "unit":"%", "default":70,"enable": 0},
+				{"name":"Max Res Factor", "offset":175, "type":"U1", "unit":"num", "default":12,"enable": 0},
+				{"name":"Min Res Factor", "offset":176, "type":"U1", "unit":"num", "default":5,"enable": 0},
+				{"name":"Max V Delta", "offset":177, "type":"U1", "unit":"num", "default":14,"enable": 0},
+				{"name":"Ra Filter", "offset":178, "type":"U2", "unit":"num", "default":900,"enable": 0},
+				{"name":"Q Invalid MaxV", "offset":180, "type":"U2", "unit":"mV", "default":3800,"enable": 0},
+				{"name":"Q Invalid MinV", "offset":182, "type":"U2", "unit":"mV", "default":3600,"enable": 0},
+				{"name":"Fast Qmax Learning Filter", "offset":184, "type":"U1", "unit":"num", "default":220,"enable": 0},
+				{"name":"Fast Qmax Start DOD %", "offset":185, "type":"U1", "unit":"%", "default":92,"enable": 0},
+				{"name":"Fast Qmax End DOD %", "offset":186, "type":"U1", "unit":"%", "default":96,"enable": 0},
+				{"name":"Fast Qmax Start Volt Delta", "offset":188, "type":"U2", "unit":"mV", "default":120,"enable": 0},
+				{"name":"Fast Qmax Current Threshold", "offset":190, "type":"U2", "unit":"C/ragte", "default":4,"enable": 0},
+				{"name":"Fast Qmax Min Points", "offset":192, "type":"U1", "unit":"num", "default":3,"enable": 0},
+				{"name":"Fast Qmax Volt Buffer", "offset":193, "type":"U1", "unit":"mV", "default":50,"enable": 0},
+				{"name":"Qmax Capacity Err", "offset":194, "type":"U1", "unit":"0.1%", "default":15,"enable": 0},
+				{"name":"Max Qmax Change", "offset":195, "type":"U1", "unit":"%", "default":10,"enable": 0},
+				{"name":"Qmax Max Delta %", "offset":196, "type":"U1", "unit":"%", "default":10,"enable": 0},
+				{"name":"Upper Bound Qmax", "offset":197, "type":"U1", "unit":"%", "default":120,"enable": 0},
+				{"name":"Terminate Voltage", "offset":198, "type":"U2", "unit":"mV", "default":3100,"enable": 0},
+				{"name":"Term V Delta", "offset":200, "type":"U2", "unit":"mV", "default":200,"enable": 0},
+				{"name":"ResRelax Time", "offset":202, "type":"U2", "unit":"s", "default":60,"enable": 0},
+				{"name":"User Rate-Pwr", "offset":204, "type":"U2", "unit":"cW", "default":0,"enable": 0},
+				{"name":"Reserve Cap-mAh", "offset":206, "type":"U2", "unit":"mAh", "default":60,"enable": 0},
+				{"name":"Reserve Energy", "offset":208, "type":"U2", "unit":"cWh", "default":24,"enable": 0},
+				{"name":"Max Sim Rate", "offset":210, "type":"U2", "unit":"C/ragte", "default":1,"enable": 0},
+				{"name":"Min Sim Rate", "offset":212, "type":"U2", "unit":"C/ragte", "default":12,"enable": 0},
+				{"name":"Ra Max Delta", "offset":214, "type":"U1", "unit":"2^-10ohm", "default":6,"enable": 0},
+				{"name":"Trace Resistance", "offset":216, "type":"U2", "unit":"2^-10ohm", "default":10,"enable": 0},
+				{"name":"Downstream Resistance", "offset":218, "type":"U2", "unit":"2^-10ohm", "default":45,"enable": 0},
+				{"name":"Max Res Scale", "offset":220, "type":"U2", "unit":"num", "default":24,"enable": 0},
+				{"name":"Min Res Scale", "offset":222, "type":"U2", "unit":"num", "default":1,"enable": 0},
+				{"name":"Fast Scale Start SOC", "offset":224, "type":"U1", "unit":"%", "default":15,"enable": 0},
+				{"name":"Charge Hys Voltage", "offset":226, "type":"U2", "unit":"mV", "default":3950,"enable": 0},
+				{"name":"V Cons V Enable", "offset":228, "type":"U2", "unit":"mV", "default":3250,"enable": 0},
+				{"name":"RaScl OCV Rst Temp Thresh", "offset":230, "type":"U1", "unit":"°C", "default":15,"enable": 0},
+				{"name":"Nom Dsg Rate", "offset":232, "type":"U2", "unit":"mA/mW/cW", "default":1093,"enable": 0},
+				{"name":"NCC Lower Bound", "offset":234, "type":"U1", "unit":"%", "default":15,"enable": 0},
+				{"name":"Capacity Refresh Current", "offset":235, "type":"U1", "unit":"%", "default":50,"enable": 0},
+				{"name":"Current Delta Holdoff", "offset":236, "type":"U1", "unit":"s", "default":0,"enable": 0},
+				{"name":"Charge Sim Max SOC", "offset":237, "type":"U1", "unit":"%", "default":100,"enable": 0},
+				{"name":"Max DeltaV", "offset":238, "type":"U2", "unit":"mV", "default":4200,"enable": 0},
+				{"name":"Min DeltaV", "offset":240, "type":"U2", "unit":"mV", "default":3600,"enable": 0}
+			 ]
+			},
+			{"Subclass":"Current Thresholds",
+			 "item":[
+				{"name":"Dsg Current Threshold", "offset":242, "type":"U2", "unit":"mA", "default":80,"enable": 0},
+				{"name":"Chg Current Threshold", "offset":244, "type":"U2", "unit":"mA", "default":75,"enable": 0},
+				{"name":"Quit Current", "offset":246, "type":"U2", "unit":"mA", "default":25,"enable": 0},
+				{"name":"Dsg Relax Time", "offset":248, "type":"U1", "unit":"s", "default":2,"enable": 0},
+				{"name":"Chg Relax Time", "offset":249, "type":"U1", "unit":"s", "default":30,"enable": 0},
+				{"name":"Quit Relax Time", "offset":250, "type":"U1", "unit":"s", "default":1,"enable": 0},
+				{"name":"Max IR Correct", "offset":252, "type":"U2", "unit":"mV", "default":400,"enable": 0}
+			 ]
+			},
+			{"Subclass":"State",
+			 "item":[
+				{"name":"Qmax Cell 0", "offset":254, "type":"U2", "unit":"mAh", "default":2898,"enable": 1},
+				{"name":"Cycle Count Of Last Qmax", "offset":256, "type":"U2", "unit":"num", "default":4,"enable": 1},
+				{"name":"Update Status", "offset":258, "type":"H1", "unit":"hex", "default":"06","enable": 0},
+				{"name":"V at Chg Term", "offset":260, "type":"U2", "unit":"mV", "default":4450,"enable": 0},
+				{"name":"Avg I Last Run", "offset":262, "type":"I2", "unit":"mA", "default":-700,"enable": 0},
+				{"name":"Avg P Last Run", "offset":264, "type":"I2", "unit":"mW/cW", "default":-2880,"enable": 0},
+				{"name":"Delta Voltage", "offset":266, "type":"U2", "unit":"mV", "default":45,"enable": 0},
+				{"name":"T Rise", "offset":268, "type":"U2", "unit":"num", "default":50,"enable": 0},
+				{"name":"T Time Constant", "offset":270, "type":"U2", "unit":"num", "default":1000,"enable": 0}
+			 ]
+			}
+		]
+	},
+	{"Class":"Calibration",
+		"Sub":[
+			{"Subclass":"Data",
+			 "item":[
+				{"name":"CC Gain", "offset":272, "type":"F4", "unit":"mOhm", "default":1.8, "enable": 0},
+				{"name":"CC Delta", "offset":276, "type":"F4", "unit":"mOhm", "default":1.8,"enable": 0},
+				{"name":"CC Offset", "offset":280, "type":"I2", "unit":"mV", "default":-8,"enable": 0},
+				{"name":"Board Offset", "offset":282, "type":"I1", "unit":"num", "default":8,"enable": 0},
+				{"name":"Int Temp Offset", "offset":283, "type":"I1-0.1", "unit":"℃", "default":1.5,"enable": 0},
+				{"name":"Ext Temp Offset", "offset":284, "type":"I1-0.1", "unit":"℃", "default":1.5,"enable": 0},
+				{"name":"Pack V Offset", "offset":285, "type":"I1", "unit":"num", "default":8,"enable": 0}
+			 ]
+			},
+			{"Subclass":"Current",
+			 "item":[
+				{"name":"Filter", "offset":286, "type":"U1", "unit":"num", "default":239},
+				{"name":"Deadband", "offset":287, "type":"U1", "unit":"mA", "default":8}
+			 ]
+			}
+		]
+	},
+	{"Class":"System Data",
+		"Sub":[
+			{"Subclass":"Data",
+			 "item":[
+				{"name":"Manufacturer", "offset":288, "type":"SF", "unit":"/", "default":"0000000", "length": 32, "enable": 1},
+				{"name":"SN", "offset":320, "type":"SF", "unit":"/", "default":"0000000", "length": 32, "enable": 1},
+				{"name":"生产日期", "offset":352, "type":"U2-date", "unit":"date", "default":"2026-06-05", "enable": 1},
+				{"name":"首次使用日期", "offset":354, "type":"U2-date1st", "unit":"date", "default":"2026-06-05", "enable": 1},
+				{"name":"FCC固定循环", "offset":356, "type":"U2", "unit":"Cycle", "default":5, "enable": 1},
+				{"name":"固定FCC", "offset":358, "type":"U2", "unit":"mAh", "default":3000, "enable": 1},
+				{"name":"7037启用", "offset":360, "type":"U1", "unit":"0/1", "default":0, "enable": 1}
+			 ]
+			}
+		]
+	}
+ ]
+}
