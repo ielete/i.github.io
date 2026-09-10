@@ -1316,8 +1316,8 @@
 			},
 			{"Subclass":"Current",
 			 "item":[
-				{"name":"Filter", "offset":286, "type":"U1", "unit":"num", "default":239},
-				{"name":"Deadband", "offset":287, "type":"U1", "unit":"mA", "default":8}
+				{"name":"Filter", "offset":286, "type":"U1", "unit":"num", "default":239,"enable": 0},
+				{"name":"Deadband", "offset":287, "type":"U1", "unit":"mA", "default":8"enable": 0}
 			 ]
 			}
 		]
