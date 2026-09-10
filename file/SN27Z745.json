@@ -1095,22 +1095,22 @@
 			},
 			{"Subclass":"Charge Termination",
 		     "item":[
-				{"name":"Taper Current", "offset":6, "type":"U2", "unit":"mA", "default":120,"enable": 0},
-				{"name":"Min Taper Capacity", "offset":8, "type":"U2", "unit":"mAh", "default":15,"enable": 0},
-				{"name":"Taper Voltage", "offset":10, "type":"U2", "unit":"mV", "default":10,"enable": 0},
-				{"name":"Current Taper Window", "offset":12, "type":"U1", "unit":"s", "default":40,"enable": 0},
-				{"name":"FC Set %", "offset":13, "type":"I1", "unit":"%", "default":-1,"enable": 0},
-				{"name":"FC Clear %", "offset":14, "type":"I1", "unit":"%", "default":98,"enable": 0},
+				{"name":"Taper Current", "offset":6, "type":"U2", "unit":"mA", "default":120,"enable": 1},
+				{"name":"Min Taper Capacity", "offset":8, "type":"U2", "unit":"mAh", "default":15,"enable": 1},
+				{"name":"Taper Voltage", "offset":10, "type":"U2", "unit":"mV", "default":10,"enable": 1},
+				{"name":"Current Taper Window", "offset":12, "type":"U1", "unit":"s", "default":40,"enable": 1},
+				{"name":"FC Set %", "offset":13, "type":"I1", "unit":"%", "default":-1,"enable": 1},
+				{"name":"FC Clear %", "offset":14, "type":"I1", "unit":"%", "default":98,"enable": 1},
 				{"name":"DODatEOC Delta T", "offset":16, "type":"I2-0.1", "unit":"°C", "default":5.0,"enable": 0},
 				{"name":"Default Charging Voltage", "offset":18, "type":"U2", "unit":"mV", "default":4450,"enable": 0},
-				{"name":"Min Charging Voltage", "offset":20, "type":"U2", "unit":"mV", "default":4430,"enable": 0},
+				{"name":"Min Charging Voltage", "offset":20, "type":"U2", "unit":"mV", "default":4430,"enable": 1},
 				{"name":"Charging Table", "offset":22, "type":"U2", "unit":"Num", "default":10,"enable": 0}
 				]
 			},
 			{"Subclass":"Data",
 		     "item":[
 				{"name":"Cycle Count", "offset":24, "type":"U2", "unit":"num", "default":2,"enable": 1},
-				{"name":"CC Threshold", "offset":26, "type":"U2", "unit":"mAh", "default":2888,"enable": 0},
+				{"name":"CC Threshold", "offset":26, "type":"U2", "unit":"mAh", "default":2888,"enable": 1},
 				{"name":"Design Capacity", "offset":28, "type":"U2", "unit":"mAh", "default":2798,"enable": 0},
 				{"name":"Design Energy", "offset":30, "type":"U2", "unit":"Egy", "default":10350,"enable": 0},
 				{"name":"Design Energy Scale", "offset":32, "type":"U1", "unit":"num", "default":1,"enable": 0}
@@ -1277,11 +1277,11 @@
 			},
 			{"Subclass":"Current Thresholds",
 			 "item":[
-				{"name":"Dsg Current Threshold", "offset":242, "type":"U2", "unit":"mA", "default":80,"enable": 0},
-				{"name":"Chg Current Threshold", "offset":244, "type":"U2", "unit":"mA", "default":75,"enable": 0},
-				{"name":"Quit Current", "offset":246, "type":"U2", "unit":"mA", "default":25,"enable": 0},
-				{"name":"Dsg Relax Time", "offset":248, "type":"U1", "unit":"s", "default":2,"enable": 0},
-				{"name":"Chg Relax Time", "offset":249, "type":"U1", "unit":"s", "default":30,"enable": 0},
+				{"name":"Dsg Current Threshold", "offset":242, "type":"U2", "unit":"mA", "default":80,"enable": 1},
+				{"name":"Chg Current Threshold", "offset":244, "type":"U2", "unit":"mA", "default":75,"enable": 1},
+				{"name":"Quit Current", "offset":246, "type":"U2", "unit":"mA", "default":25,"enable": 1},
+				{"name":"Dsg Relax Time", "offset":248, "type":"U1", "unit":"s", "default":2,"enable": 1},
+				{"name":"Chg Relax Time", "offset":249, "type":"U1", "unit":"s", "default":30,"enable": 1},
 				{"name":"Quit Relax Time", "offset":250, "type":"U1", "unit":"s", "default":1,"enable": 0},
 				{"name":"Max IR Correct", "offset":252, "type":"U2", "unit":"mV", "default":400,"enable": 0}
 			 ]
@@ -1290,7 +1290,7 @@
 			 "item":[
 				{"name":"Qmax Cell 0", "offset":254, "type":"U2", "unit":"mAh", "default":2898,"enable": 1},
 				{"name":"Cycle Count Of Last Qmax", "offset":256, "type":"U2", "unit":"num", "default":4,"enable": 1},
-				{"name":"Update Status", "offset":258, "type":"H1", "unit":"hex", "default":"06","enable": 0},
+				{"name":"Update Status", "offset":258, "type":"H1", "unit":"hex", "default":"06","enable": 1},
 				{"name":"V at Chg Term", "offset":260, "type":"U2", "unit":"mV", "default":4450,"enable": 0},
 				{"name":"Avg I Last Run", "offset":262, "type":"I2", "unit":"mA", "default":-700,"enable": 0},
 				{"name":"Avg P Last Run", "offset":264, "type":"I2", "unit":"mW/cW", "default":-2880,"enable": 0},
