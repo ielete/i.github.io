@@ -1308,7 +1308,7 @@
 				{"name":"CC Gain", "offset":272, "type":"F4", "unit":"mOhm", "default":1.8, "enable": 0},
 				{"name":"CC Delta", "offset":276, "type":"F4", "unit":"mOhm", "default":1.8,"enable": 0},
 				{"name":"CC Offset", "offset":280, "type":"I2", "unit":"mV", "default":-8,"enable": 0},
-				{"name":"Board Offset", "offset":282, "type":"I1", "unit":"num", "default":8,"enable": 0},
+				{"name":"Board Offset", "offset":282, "type":"I1", "unit":"num", "default":8,"enable": 1},
 				{"name":"Int Temp Offset", "offset":283, "type":"I1-0.1", "unit":"℃", "default":1.5,"enable": 0},
 				{"name":"Ext Temp Offset", "offset":284, "type":"I1-0.1", "unit":"℃", "default":1.5,"enable": 0},
 				{"name":"Pack V Offset", "offset":285, "type":"I1", "unit":"num", "default":8,"enable": 0}
