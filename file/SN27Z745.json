@@ -1117,7 +1117,7 @@
 		     "item":[
 				{"name":"Cycle Count", "offset":24, "type":"U2", "unit":"num", "default":2,"enable": 1},
 				{"name":"CC Threshold", "offset":26, "type":"U2", "unit":"mAh", "default":2888,"enable": 1},
-				{"name":"Design Capacity", "offset":28, "type":"U2", "unit":"mAh", "default":2798,"enable": 0},
+				{"name":"Design Capacity", "offset":28, "type":"U2", "unit":"mAh", "default":2798,"enable": 1},
 				{"name":"Design Energy", "offset":30, "type":"U2", "unit":"Egy", "default":10350,"enable": 0},
 				{"name":"Design Energy Scale", "offset":32, "type":"U1", "unit":"num", "default":1,"enable": 0}
 				]
@@ -1338,7 +1338,9 @@
 				{"name":"首次使用日期", "offset":354, "type":"U2-date1st", "unit":"date", "default":"2026-06-05", "enable": 1},
 				{"name":"FCC固定循环", "offset":356, "type":"U2", "unit":"Cycle", "default":5, "enable": 1},
 				{"name":"固定FCC", "offset":358, "type":"U2", "unit":"mAh", "default":3000, "enable": 1},
-				{"name":"7037启用", "offset":360, "type":"U1", "unit":"0/1", "default":0, "enable": 1}
+				{"name":"7037启用", "offset":360, "type":"U1", "unit":"0/1", "default":0, "enable": 1},
+				{"name":"匹配状态", "offset":361, "type":"U1", "unit":"0/1", "default":5, "enable": 0},
+				{"name":"debug", "offset":362, "type":"U1", "unit":"0/1", "default":5, "enable": 0}
 			 ]
 			}
 		]
