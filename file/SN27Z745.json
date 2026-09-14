@@ -220,6 +220,12 @@
   {"name":"UN seal", "cname":"UNSEAL", "addr":"44","icon":"seald.png", "cmd": "66668888", "back": "N/A"},
   {"name":"UN seal Full", "cname":"UNSEALFULL", "addr":"44","icon":"sealf.png", "cmd": "FFFFFFFF", "back": "N/A"}
   ],
+"CommandMID":
+ [
+  {"name":"Chem ID", "cname":"chemID", "addr":"66", "icon":"sturn.png",  "cmd":"3300", "back": ""},
+  {"name":"Seal", "cname":"SEAL", "addr":"44","icon":"sealu.png", "cmd": "02300095", "back": "N/A"},
+  {"name":"UN seal Full", "cname":"UNSEALFULL", "addr":"44","icon":"sealf.png", "cmd": "FFFFFFFF", "back": "N/A"}
+ ],
 "Memory":
  [
 	 {"Class":"Calibration",
@@ -1161,7 +1167,7 @@
 				{"name":"Lifetime Max Ra 8", "offset":96, "type":"U2", "unit":"2^-10ohm", "default":128,"enable": 0},
 				{"name":"Lifetime Min Ra 8", "offset":98, "type":"U2", "unit":"2^-10ohm", "default":28,"enable": 0},
 				{"name":"Lifetime Avg Temp", "offset":100, "type":"U1", "unit":"°C", "default":46,"enable": 0}
-				] 
+				]
 			},
 			{"Subclass":"Lifetime Temp Samples",
 		     "item":[
